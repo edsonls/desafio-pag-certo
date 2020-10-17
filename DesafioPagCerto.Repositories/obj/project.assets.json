@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "DesafioPagCerto.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DesafioPagCerto.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesafioPagCerto.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DesafioPagCerto.Entities/1.0.0": {
+      "type": "project",
+      "path": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj",
+      "msbuildProject": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "DesafioPagCerto.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\edson\\.nuget\\packages\\": {},
@@ -36,7 +55,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

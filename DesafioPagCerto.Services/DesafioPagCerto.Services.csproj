@@ -5,7 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Intefaces" />
+      <ProjectReference Include="..\DesafioPagCerto.Entities\DesafioPagCerto.Entities.csproj" />
+      <ProjectReference Include="..\DesafioPagCerto.Repositories\DesafioPagCerto.Repositories.csproj" />
     </ItemGroup>
 
 </Project>

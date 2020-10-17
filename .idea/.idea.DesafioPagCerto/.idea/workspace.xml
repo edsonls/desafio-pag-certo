@@ -13,11 +13,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Adicionando mais Cadamadas">
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" afterDir="false" />
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Criação de Request Class para validação">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionSerivice.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/DesafioPagCerto.Repositories.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/DesafioPagCerto.Repositories.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/DesafioPagCerto.Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/DesafioPagCerto.Services.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/DesafioPagCerto.Services.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/DesafioPagCerto.Services.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +55,15 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Parcel.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Class1.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transaction.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Intefaces/ITransactionSerivice.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/TransactionRepository.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionSerivice.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -107,7 +125,7 @@
       <updated>1602960768954</updated>
       <workItem from="1602960775378" duration="68000" />
       <workItem from="1602960912459" duration="3637000" />
-      <workItem from="1602964755264" duration="4076000" />
+      <workItem from="1602964755264" duration="6494000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -123,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602967089085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criação de Request Class para validação">
+      <created>1602970399078</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602970399078</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,13 +171,18 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Commit init estrutura inicial" />
     <MESSAGE value="Adicionando mais Cadamadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando mais Cadamadas" />
+    <MESSAGE value="Criação de Request Class para validação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação de Request Class para validação" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2408" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602960831177">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2408" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602960831177" />
+    <state x="2128" y="68" key="DiffContextDialog" timestamp="1602974371621">
+      <screen x="1920" y="0" width="2048" height="824" />
+    </state>
+    <state x="2128" y="68" key="DiffContextDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602974371621" />
     <state x="2537" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1602966924306">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
@@ -161,6 +191,10 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2460" y="93" key="RiderGenerateDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602969827193" />
+    <state x="2458" y="125" key="RollbackChangesDialog" timestamp="1602974374064">
+      <screen x="1920" y="0" width="2048" height="824" />
+    </state>
+    <state x="2458" y="125" key="RollbackChangesDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602974374064" />
     <state x="2567" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602970081520">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
