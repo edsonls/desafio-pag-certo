@@ -61,7 +61,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="DesafioPagCerto.Services.csproj" t="IncludeRecursive" />
         <e p="Interfaces" t="Include">
-          <e p="ITransactionSerivice.cs" t="Include" />
+          <e p="ITransactionService.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
