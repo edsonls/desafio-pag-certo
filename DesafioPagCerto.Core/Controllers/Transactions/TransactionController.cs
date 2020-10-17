@@ -1,4 +1,5 @@
 ﻿using DesafioPagCerto.Entities;
+using DesafioPagCerto.Requests;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesafioPagCerto.Controllers.Transactions
@@ -8,7 +9,7 @@ namespace DesafioPagCerto.Controllers.Transactions
     public class TransactionController : ControllerBase
     {
         [HttpPost]
-        public Transaction save()
+        public Transaction Save([FromBody] TransactionRequest transactionRequest)
         {
             return new Transaction();
         }

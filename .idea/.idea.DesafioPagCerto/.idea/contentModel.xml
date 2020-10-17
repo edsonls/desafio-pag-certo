@@ -25,6 +25,9 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
+        <e p="Requests" t="Include">
+          <e p="TransactionRequest.cs" t="Include" />
+        </e>
         <e p="Startup.cs" t="Include" />
       </e>
       <e p="DesafioPagCerto.Entities" t="IncludeRecursive">

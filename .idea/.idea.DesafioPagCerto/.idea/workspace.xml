@@ -13,45 +13,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Commit init estrutura inicial">
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/Parcel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/DesafioPagCerto.Services.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/Debug/netcoreapp3.1/DesafioPagCerto.Services.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/Debug/netcoreapp3.1/DesafioPagCerto.Services.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/Debug/netcoreapp3.1/DesafioPagCerto.Services.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/DesafioPagCerto.Services.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/DesafioPagCerto.Services.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/DesafioPagCerto.Services.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/rider.project.restore.info" afterDir="false" />
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Adicionando mais Cadamadas">
+      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/DesafioPagCerto.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/DesafioPagCerto.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/DesafioPagCerto.Repository.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/DesafioPagCerto.Repositories.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/Debug/netcoreapp3.1/DesafioPagCerto.Repository.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/Debug/netcoreapp3.1/DesafioPagCerto.Repository.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/Debug/netcoreapp3.1/DesafioPagCerto.Repository.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/Debug/netcoreapp3.1/DesafioPagCerto.Repository.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/Debug/netcoreapp3.1/DesafioPagCerto.Repository.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/Debug/netcoreapp3.1/DesafioPagCerto.Repository.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/DesafioPagCerto.Repository.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/DesafioPagCerto.Repository.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/DesafioPagCerto.Repository.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/DesafioPagCerto.Repository.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/DesafioPagCerto.Repository.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/DesafioPagCerto.Repository.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repository/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +41,11 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/Transaction.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Parcel.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transaction.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Class1.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transaction.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" />
       </list>
     </option>
   </component>
@@ -139,7 +107,7 @@
       <updated>1602960768954</updated>
       <workItem from="1602960775378" duration="68000" />
       <workItem from="1602960912459" duration="3637000" />
-      <workItem from="1602964755264" duration="2251000" />
+      <workItem from="1602964755264" duration="4076000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -148,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602964818747</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adicionando mais Cadamadas">
+      <created>1602967089085</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602967089085</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Commit init estrutura inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit init estrutura inicial" />
+    <MESSAGE value="Adicionando mais Cadamadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando mais Cadamadas" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2408" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602960831177">
@@ -181,9 +157,13 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2537" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602966924306" />
-    <state x="2460" y="93" key="RiderGenerateDialog" timestamp="1602966470597">
+    <state x="2460" y="93" key="RiderGenerateDialog" timestamp="1602969827193">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state x="2460" y="93" key="RiderGenerateDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602966470597" />
+    <state x="2460" y="93" key="RiderGenerateDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602969827193" />
+    <state x="2567" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602970081520">
+      <screen x="1920" y="0" width="2048" height="824" />
+    </state>
+    <state x="2567" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602970081520" />
   </component>
 </project>
