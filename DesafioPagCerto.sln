@@ -2,9 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Core", "DesafioPagCerto.Core\DesafioPagCerto.Core.csproj", "{DC05DEC9-E837-4D14-9464-0E5A071284C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Repository", "DesafioPagCerto.Repository\DesafioPagCerto.Repository.csproj", "{746DB3FD-C14A-4A38-A6A3-709FB6487CDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Repositories", "DesafioPagCerto.Repositories\DesafioPagCerto.Repositories.csproj", "{746DB3FD-C14A-4A38-A6A3-709FB6487CDC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Entities", "DesafioPagCerto.Entities\DesafioPagCerto.Entities.csproj", "{F26AE4C7-BBF5-4B88-9961-B8930DD80EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Services", "DesafioPagCerto.Services\DesafioPagCerto.Services.csproj", "{1E569EDB-3CC7-4B41-9A16-59E662709E44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +26,9 @@ Global
 		{F26AE4C7-BBF5-4B88-9961-B8930DD80EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F26AE4C7-BBF5-4B88-9961-B8930DD80EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F26AE4C7-BBF5-4B88-9961-B8930DD80EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E569EDB-3CC7-4B41-9A16-59E662709E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E569EDB-3CC7-4B41-9A16-59E662709E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E569EDB-3CC7-4B41-9A16-59E662709E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E569EDB-3CC7-4B41-9A16-59E662709E44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

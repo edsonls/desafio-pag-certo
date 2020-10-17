@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Repository\\DesafioPagCerto.Repository.csproj",
-    "projectName": "DesafioPagCerto.Repository",
-    "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Repository\\DesafioPagCerto.Repository.csproj",
-    "outputPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Repository\\obj\\",
+    "projectUniqueName": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Services\\DesafioPagCerto.Services.csproj",
+    "projectName": "DesafioPagCerto.Services",
+    "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Services\\DesafioPagCerto.Services.csproj",
+    "outputPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Services\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DesafioPagCerto.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DesafioPagCerto.Controllers.Transactions
 {
@@ -6,6 +7,10 @@ namespace DesafioPagCerto.Controllers.Transactions
     [Route("transaction/v1")]
     public class TransactionController : ControllerBase
     {
-        
+        [HttpPost]
+        public Transaction save()
+        {
+            return new Transaction();
+        }
     }
 }

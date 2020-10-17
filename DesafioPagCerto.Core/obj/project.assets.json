@@ -279,6 +279,16 @@
             "rid": "win"
           }
         }
+      },
+      "DesafioPagCerto.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DesafioPagCerto.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesafioPagCerto.Entities.dll": {}
+        }
       }
     }
   },
@@ -1014,10 +1024,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DesafioPagCerto.Entities/1.0.0": {
+      "type": "project",
+      "path": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj",
+      "msbuildProject": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DesafioPagCerto.Entities >= 1.0.0",
       "EntityFramework >= 6.4.4"
     ]
   },
@@ -1050,7 +1066,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
