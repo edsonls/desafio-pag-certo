@@ -1,4 +1,5 @@
-﻿using DesafioPagCerto.Entities;
+﻿using System;
+using DesafioPagCerto.Entities;
 using DesafioPagCerto.Repository.Interfaces;
 
 namespace DesafioPagCerto.Repository
@@ -7,7 +8,8 @@ namespace DesafioPagCerto.Repository
     {
         public bool Save(Transaction transaction)
         {
-            throw new System.NotImplementedException();
+            Console.WriteLine(transaction);
+            return true;
         }
     }
 }

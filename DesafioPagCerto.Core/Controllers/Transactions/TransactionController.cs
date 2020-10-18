@@ -14,8 +14,8 @@ namespace DesafioPagCerto.Controllers.Transactions
         public Transaction Save([FromBody] TransactionRequest transactionRequest)
         {
             var service = new TransactionService(new TransactionEntity());
-            return service.CreateTransaction(transactionRequest.NumberCard, transactionRequest.NumberParcel,
-                transactionRequest.ValueTransaction);
+            return service.CreateTransaction(transactionRequest.CardNumber, transactionRequest.ParcelNumber,
+                transactionRequest.TransactionValue);
         }
     }
 }

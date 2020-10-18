@@ -31,3 +31,9 @@ C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagC
 C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\obj\Debug\netcoreapp3.1\DesafioPagCerto.Core.dll
 C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\obj\Debug\netcoreapp3.1\DesafioPagCerto.Core.pdb
 C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\obj\Debug\netcoreapp3.1\DesafioPagCerto.Core.genruntimeconfig.cache
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\bin\Debug\netcoreapp3.1\DesafioPagCerto.Entities.dll
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\bin\Debug\netcoreapp3.1\DesafioPagCerto.Repositories.dll
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\bin\Debug\netcoreapp3.1\DesafioPagCerto.Services.dll
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\bin\Debug\netcoreapp3.1\DesafioPagCerto.Entities.pdb
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\bin\Debug\netcoreapp3.1\DesafioPagCerto.Services.pdb
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\bin\Debug\netcoreapp3.1\DesafioPagCerto.Repositories.pdb

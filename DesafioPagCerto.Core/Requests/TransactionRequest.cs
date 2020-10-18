@@ -1,31 +1,17 @@
-﻿using System;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace DesafioPagCerto.Requests
 {
     public class TransactionRequest
     {
-        public string NumberCard { get; set; }
-        public int NumberParcel { get; set; }
-        public double ValueTransaction { get; set; }
-
-        public TransactionRequest()
-        {
-            ValidateRequest();
-        }
-
-        private void ValidateRequest()
-        {
-            if (NumberCard.Length != 16)
-                throw new Exception("Número do cartão inválido");
-
-            if (NumberCard.StartsWith("5999"))
-                throw new Exception("Número do cartão inválido");
-
-            if (NumberParcel <= 0)
-                throw new Exception("Valor da parcela deve ser maior ou igua a 1");
-
-            if (ValueTransaction <= 0.90)
-                throw new Exception("Valor da transação deve ser maior que R$ 0.90");
-        }
+        [StringLength(16, MinimumLength = 16)]
+        [Required]
+        // [CreditCard] todo ativar por ultimo
+        // [RegularExpression(@"^5999")]
+        public string CardNumber { get; set; }
+        [Required]
+        public int ParcelNumber { get; set; }
+        [Required]
+        public double TransactionValue { get; set; }
     }
 }
