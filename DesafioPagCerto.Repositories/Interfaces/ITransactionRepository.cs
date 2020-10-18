@@ -4,6 +4,6 @@ namespace DesafioPagCerto.Repository.Interfaces
 {
     public interface ITransactionRepository
     {
-        public bool Save(Transaction transaction);
+        public int Save(Transaction transaction);
     }
 }
