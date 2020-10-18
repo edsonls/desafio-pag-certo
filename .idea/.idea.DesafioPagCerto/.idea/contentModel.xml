@@ -74,6 +74,7 @@
             <e p="Drive.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
+            <e p="Anticipation.cs" t="Include" />
             <e p="Installment.cs" t="Include" />
             <e p="Transaction.cs" t="Include" />
           </e>
@@ -83,8 +84,8 @@
           <e p="ITransactionRepository.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20201018174223_DesafioPagCertoDB.cs" t="Include" />
-          <e p="20201018174223_DesafioPagCertoDB.Designer.cs" t="Include" />
+          <e p="20201018223850_DesafioPagCertoDB.cs" t="Include" />
+          <e p="20201018223850_DesafioPagCertoDB.Designer.cs" t="Include" />
           <e p="DriveModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

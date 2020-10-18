@@ -37,7 +37,7 @@ namespace DesafioPagCerto.Repository
                     transactionModel.TransactionDate,
                     transactionModel.ApprovedDate,
                     transactionModel.ReprovedDate,
-                    transactionModel.Anticipation,
+                    transactionModel.StatusAnticipation,
                     transactionModel.Confirmation,
                     transactionModel.GrossValue,
                     transactionModel.NetValue,
@@ -49,7 +49,7 @@ namespace DesafioPagCerto.Repository
                     transactionModel.TransactionDate,
                     transactionModel.ApprovedDate,
                     transactionModel.ReprovedDate,
-                    transactionModel.Anticipation,
+                    transactionModel.StatusAnticipation,
                     transactionModel.Confirmation,
                     transactionModel.GrossValue,
                     transactionModel.NetValue,
@@ -63,7 +63,7 @@ namespace DesafioPagCerto.Repository
             return transaction.Installments != null && transaction.Installments.Any()
                 ? new TransactionModel
                 {
-                    Anticipation = transaction.Anticipation,
+                    StatusAnticipation = transaction.Anticipation,
                     Confirmation = transaction.Confirmation,
                     ApprovedDate = transaction.ApprovedDate,
                     FixedTax = transaction.FixedTax,
@@ -77,7 +77,7 @@ namespace DesafioPagCerto.Repository
                 }
                 : new TransactionModel
                 {
-                    Anticipation = transaction.Anticipation,
+                    StatusAnticipation = transaction.Anticipation,
                     Confirmation = transaction.Confirmation,
                     ApprovedDate = transaction.ApprovedDate,
                     FixedTax = transaction.FixedTax,
@@ -121,7 +121,7 @@ namespace DesafioPagCerto.Repository
         {
             using var drive = new Drive();
             return drive.Transaction
-                .Where(t => !t.Anticipation && t.Confirmation)
+                .Where(t => !t.StatusAnticipation && t.Confirmation)
                 .Include(transaction => transaction.Installments)
                 .ToList().Select(ToEntity);
         }

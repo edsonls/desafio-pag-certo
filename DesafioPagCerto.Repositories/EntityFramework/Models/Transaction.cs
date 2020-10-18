@@ -14,7 +14,7 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
         public DateTime TransactionDate { get; set; }
         public DateTime? ApprovedDate { get; set; }
         public DateTime? ReprovedDate { get; set; }
-        public bool Anticipation { get; set; }
+        public bool StatusAnticipation { get; set; }
         public bool Confirmation { get; set; }
         public decimal GrossValue { get; set; }
         public decimal NetValue { get; set; }
@@ -23,5 +23,7 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
         public string CreditCardSuffix { get; set; }
 
         public ICollection<Installment> Installments { get; set; }
+        public Guid? AnticipationId { get; set; }
+        public Anticipation Anticipation { get; set; }
     }
 }

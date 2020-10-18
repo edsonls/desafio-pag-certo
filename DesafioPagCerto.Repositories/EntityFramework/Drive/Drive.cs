@@ -7,6 +7,7 @@ namespace DesafioPagCerto.Repository.EntityFramework.Drive
     {
         public DbSet<Transaction> Transaction { get; set; }
         public DbSet<Installment> Installment { get; set; }
+        public DbSet<Anticipation> Anticipation { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

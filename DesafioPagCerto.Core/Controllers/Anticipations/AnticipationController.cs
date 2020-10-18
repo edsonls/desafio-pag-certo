@@ -26,8 +26,9 @@ namespace DesafioPagCerto.Controllers.Anticipations
         [HttpPost]
         public Guid CreateAnticipation([FromBody] IEnumerable<AnticipationRequest> anticipations)
         {
-            return _anticipationService.CreateAnticipation(anticipations.Select(a =>
-                _transactionService.FindTransaction(a.nsu)));
+            var t = anticipations.Select(a =>
+                _transactionService.FindTransaction(a.nsu));
+            return _anticipationService.CreateAnticipation(t);
         }
     }
 }
