@@ -59,8 +59,8 @@
           <e p="ITransactionRepository.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20201018143603_DesafioPagCertoDB.cs" t="Include" />
-          <e p="20201018143603_DesafioPagCertoDB.Designer.cs" t="Include" />
+          <e p="20201018150724_DesafioPagCertoDB.cs" t="Include" />
+          <e p="20201018150724_DesafioPagCertoDB.Designer.cs" t="Include" />
           <e p="DriveModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

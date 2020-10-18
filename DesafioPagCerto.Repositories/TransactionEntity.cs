@@ -10,13 +10,13 @@ namespace DesafioPagCerto.Repository
 {
     public class TransactionEntity : ITransactionRepository
     {
-        public int Save(Transaction transaction)
+        public Guid Save(Transaction transaction)
         {
             using var drive = new Drive();
             var model = ToModel(transaction);
             drive.Transaction.Add(model);
             drive.SaveChanges();
-            return model.Id;
+            return model.NSU;
         }
 
         private static TransactionModel ToModel(Transaction transaction)

@@ -1,9 +1,10 @@
-﻿using DesafioPagCerto.Entities;
+﻿using System;
+using DesafioPagCerto.Entities;
 
 namespace DesafioPagCerto.Repository.Interfaces
 {
     public interface ITransactionRepository
     {
-        public int Save(Transaction transaction);
+        public Guid Save(Transaction transaction);
     }
 }

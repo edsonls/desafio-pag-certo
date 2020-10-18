@@ -5,7 +5,7 @@ namespace DesafioPagCerto.Entities
 {
     public class Transaction
     {
-        public int NSU { get; }
+        public Guid NSU { get; }
         public DateTime TransactionDate { get; }
         public DateTime ApprovedDate { get; private set; }
         public DateTime ReprovedDate { get; private set; }
@@ -18,7 +18,7 @@ namespace DesafioPagCerto.Entities
         public string CreditCardSuffix { get; }
         public IEnumerable<Installment> Installments { get; private set; }
 
-        public Transaction(int nsu, DateTime transactionDate, DateTime approvedDate, DateTime reprovedDate,
+        public Transaction(Guid nsu, DateTime transactionDate, DateTime approvedDate, DateTime reprovedDate,
             bool anticipation, bool confirmation, decimal grossValue, decimal netValue, decimal fixedTax,
             int numberParcel, string creditCardSuffix)
         {

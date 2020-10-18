@@ -16,7 +16,7 @@ namespace DesafioPagCerto.Services
             _repository = repository;
         }
 
-        public int CreateTransaction(string numberCard, int numberInstallment,
+        public Guid CreateTransaction(string numberCard, int numberInstallment,
             decimal valueTransaction)
         {
             var transaction = new Transaction(

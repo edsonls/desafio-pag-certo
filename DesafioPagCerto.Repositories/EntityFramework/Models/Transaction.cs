@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DesafioPagCerto.Repository.EntityFramework.Models
 {
     public class Transaction
     {
-        public int Id { get; set; }
-        public int NSU { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public Guid NSU { get; set; }
+
         public DateTime TransactionDate { get; set; }
         public DateTime ApprovedDate { get; set; }
         public DateTime ReprovedDate { get; set; }
