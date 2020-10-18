@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using DesafioPagCerto.Entities;
+using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Repository.EntityFramework.Drive;
 using DesafioPagCerto.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;

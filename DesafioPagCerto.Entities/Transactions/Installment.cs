@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesafioPagCerto.Entities
+namespace DesafioPagCerto.Entities.Transactions
 {
     public class Installment
     {

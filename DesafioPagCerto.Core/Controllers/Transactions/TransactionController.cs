@@ -1,5 +1,6 @@
 ﻿using System;
 using DesafioPagCerto.Entities;
+using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
 using DesafioPagCerto.Services;

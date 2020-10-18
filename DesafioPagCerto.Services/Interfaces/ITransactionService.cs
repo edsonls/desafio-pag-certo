@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DesafioPagCerto.Entities;
+using DesafioPagCerto.Entities.Transactions;
 
 namespace DesafioPagCerto.Services.Interfaces
 {

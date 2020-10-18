@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using DesafioPagCerto.Entities;
+using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Services;
 using Microsoft.AspNetCore.Mvc;
