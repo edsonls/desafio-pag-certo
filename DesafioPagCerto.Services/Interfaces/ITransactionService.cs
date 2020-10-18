@@ -4,6 +4,8 @@ namespace DesafioPagCerto.Services.Interfaces
 {
     public interface ITransactionService
     {
-        public bool Save(Transaction transaction);
+        bool Save(Transaction transaction);
+
+        Transaction CreateTransaction(string numberCard, int numberParcel, double valueTransaction);
     }
 }

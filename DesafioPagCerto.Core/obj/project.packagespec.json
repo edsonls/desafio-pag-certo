@@ -21,6 +21,9 @@
         "projectReferences": {
           "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj": {
             "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj"
+          },
+          "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Services\\DesafioPagCerto.Services.csproj": {
+            "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Services\\DesafioPagCerto.Services.csproj"
           }
         }
       }

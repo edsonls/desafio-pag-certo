@@ -9,4 +9,8 @@
       <ProjectReference Include="..\DesafioPagCerto.Entities\DesafioPagCerto.Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="EntityFramework" Version="6.4.4" />
+    </ItemGroup>
+
 </Project>

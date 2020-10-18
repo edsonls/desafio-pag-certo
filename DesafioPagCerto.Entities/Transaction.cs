@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DesafioPagCerto.Entities
 {
@@ -10,15 +11,15 @@ namespace DesafioPagCerto.Entities
         private DateTime DateReapproved { get; }
         private bool Anticipation { get; }
         private bool Confirmation { get; }
-        private decimal GrossValue { get; }
-        private decimal NetValue { get; }
-        private decimal TaxFixed { get; }
+        private double GrossValue { get; }
+        private double NetValue { get; }
+        private double TaxFixed { get; }
         private int NumberParcel { get; }
         private string CredCard { get; }
-        private Parcel[] Parcels { get; }
+        private IEnumerable<Parcel> Parcels { get; }
 
         public Transaction(int nsu, DateTime dateTransaction, DateTime dateApproved, DateTime dateReapproved,
-            bool anticipation, bool confirmation, decimal grossValue, decimal netValue, decimal taxFixed,
+            bool anticipation, bool confirmation, double grossValue, double netValue, double taxFixed,
             int numberParcel, string credCard)
         {
             NSU = nsu;
@@ -32,6 +33,18 @@ namespace DesafioPagCerto.Entities
             TaxFixed = taxFixed;
             NumberParcel = numberParcel;
             CredCard = credCard;
+        }
+
+        public Transaction(DateTime dateTransaction, double grossValue, double netValue, double taxFixed,
+            int numberParcel, string credCard, IEnumerable<Parcel> parcels)
+        {
+            DateTransaction = dateTransaction;
+            GrossValue = grossValue;
+            NetValue = netValue;
+            TaxFixed = taxFixed;
+            NumberParcel = numberParcel;
+            CredCard = credCard;
+            Parcels = parcels;
         }
 
         public Transaction()

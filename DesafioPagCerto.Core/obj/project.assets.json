@@ -289,6 +289,34 @@
         "runtime": {
           "bin/placeholder/DesafioPagCerto.Entities.dll": {}
         }
+      },
+      "DesafioPagCerto.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DesafioPagCerto.Entities": "1.0.0",
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "bin/placeholder/DesafioPagCerto.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesafioPagCerto.Repositories.dll": {}
+        }
+      },
+      "DesafioPagCerto.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DesafioPagCerto.Entities": "1.0.0",
+          "DesafioPagCerto.Repositories": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DesafioPagCerto.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesafioPagCerto.Services.dll": {}
+        }
       }
     }
   },
@@ -1029,11 +1057,22 @@
       "type": "project",
       "path": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj",
       "msbuildProject": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj"
+    },
+    "DesafioPagCerto.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../DesafioPagCerto.Repositories/DesafioPagCerto.Repositories.csproj",
+      "msbuildProject": "../DesafioPagCerto.Repositories/DesafioPagCerto.Repositories.csproj"
+    },
+    "DesafioPagCerto.Services/1.0.0": {
+      "type": "project",
+      "path": "../DesafioPagCerto.Services/DesafioPagCerto.Services.csproj",
+      "msbuildProject": "../DesafioPagCerto.Services/DesafioPagCerto.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "DesafioPagCerto.Entities >= 1.0.0",
+      "DesafioPagCerto.Services >= 1.0.0",
       "EntityFramework >= 6.4.4"
     ]
   },
@@ -1069,6 +1108,9 @@
           "projectReferences": {
             "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj": {
               "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj"
+            },
+            "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Services\\DesafioPagCerto.Services.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Services\\DesafioPagCerto.Services.csproj"
             }
           }
         }

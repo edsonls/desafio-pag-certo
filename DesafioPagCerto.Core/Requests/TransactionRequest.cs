@@ -4,9 +4,9 @@ namespace DesafioPagCerto.Requests
 {
     public class TransactionRequest
     {
-        private string NumberCard { get; set; }
-        private int NumberParcel { get; set; }
-        private float ValueTransaction { get; set; }
+        public string NumberCard { get; set; }
+        public int NumberParcel { get; set; }
+        public double ValueTransaction { get; set; }
 
         public TransactionRequest()
         {

@@ -6,14 +6,14 @@ namespace DesafioPagCerto.Entities
     {
         private int Id { get; }
         private int NumberParcel { get; }
-        private decimal GrossValue { get; }
-        private decimal NetValue { get; }
-        private decimal? AnticipationValue { get; }
+        private double GrossValue { get; }
+        private double NetValue { get; }
+        private double? AnticipationValue { get; }
         private DateTime ExpectedDate { get; }
         private DateTime? TransferDate { get; }
         private Transaction Transaction { get; }
 
-        public Parcel(int id, int numberParcel, decimal grossValue, decimal netValue, decimal? anticipationValue,
+        public Parcel(int id, int numberParcel, double grossValue, double netValue, double? anticipationValue,
             DateTime expectedDate, DateTime? transferDate, Transaction transaction)
         {
             Id = id;
@@ -24,6 +24,14 @@ namespace DesafioPagCerto.Entities
             ExpectedDate = expectedDate;
             TransferDate = transferDate;
             Transaction = transaction;
+        }
+
+        public Parcel(int numberParcel, double grossValue, double netValue, DateTime expectedDate)
+        {
+            NumberParcel = numberParcel;
+            GrossValue = grossValue;
+            NetValue = netValue;
+            ExpectedDate = expectedDate;
         }
     }
 }
