@@ -6,7 +6,7 @@ namespace DesafioPagCerto.Services.Interfaces
     public interface ITransactionService
     {
     
-        Transaction CreateTransaction(string numberCard, int numberParcel, decimal valueTransaction);
+        int CreateTransaction(string numberCard, int numberParcel, decimal valueTransaction);
         IEnumerable<Installment> CreateInstallments(int numberInstallment, decimal valueTransaction);
     }
 }

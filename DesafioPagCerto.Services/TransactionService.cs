@@ -16,7 +16,7 @@ namespace DesafioPagCerto.Services
             _repository = repository;
         }
 
-        public Transaction CreateTransaction(string numberCard, int numberInstallment,
+        public int CreateTransaction(string numberCard, int numberInstallment,
             decimal valueTransaction)
         {
             var transaction = new Transaction(
@@ -38,8 +38,7 @@ namespace DesafioPagCerto.Services
                 transaction.Reproved();
             }
 
-            _repository.Save(transaction);
-            return transaction;
+            return _repository.Save(transaction);
         }
 
         private bool ApprovedTransaction(Transaction transaction) => 1000 > transaction.GrossValue;
@@ -51,7 +50,7 @@ namespace DesafioPagCerto.Services
             var grossValueForInstallment = valueTransaction / numberInstallment;
             for (var i = 0; i < numberInstallment; i++)
             {
-                installments.Add(new Installment(i, grossValueForInstallment, netValueForInstallment,
+                installments.Add(new Installment(i + 1, grossValueForInstallment, netValueForInstallment,
                     DateTime.Now.AddMonths(i + 1)));
             }
 

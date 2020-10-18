@@ -1,5 +1,4 @@
-﻿using DesafioPagCerto.Entities;
-using DesafioPagCerto.Repository;
+﻿using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
 using DesafioPagCerto.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +10,7 @@ namespace DesafioPagCerto.Controllers.Transactions
     public class TransactionController : ControllerBase
     {
         [HttpPost]
-        public Transaction Save([FromBody] TransactionRequest transactionRequest)
+        public int Save([FromBody] TransactionRequest transactionRequest)
         {
             var service = new TransactionService(new TransactionEntity());
             return service.CreateTransaction(transactionRequest.CardNumber, transactionRequest.ParcelNumber,

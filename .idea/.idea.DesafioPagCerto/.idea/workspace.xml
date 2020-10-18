@@ -13,10 +13,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Cadastrando no Banco com EntityFramework">
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Ajuste no metodo que salva a transação para que o mesmo retorne o id da transação">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +55,9 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionSerivice.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Parcel.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController1.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/appsettings.json" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/DbContexts/TransactionContext.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transaction.cs" />
@@ -71,6 +69,9 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Installment.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
       </list>
     </option>
   </component>
@@ -139,7 +140,7 @@
       <workItem from="1602979404420" duration="1470000" />
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
-      <workItem from="1603027503046" duration="5566000" />
+      <workItem from="1603027503046" duration="5725000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -211,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603031850756</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ajuste no metodo que salva a transação para que o mesmo retorne o id da transação">
+      <created>1603033162309</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603033162309</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +250,8 @@
     <MESSAGE value="Trocando por Validate data annotations" />
     <MESSAGE value="Ajustando Regra de negocio" />
     <MESSAGE value="Cadastrando no Banco com EntityFramework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cadastrando no Banco com EntityFramework" />
+    <MESSAGE value="Ajuste no metodo que salva a transação para que o mesmo retorne o id da transação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste no metodo que salva a transação para que o mesmo retorne o id da transação" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2342" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602975174953">
