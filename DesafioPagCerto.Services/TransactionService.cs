@@ -59,12 +59,17 @@ namespace DesafioPagCerto.Services
 
         public Transaction FindTransaction(Guid NSU)
         {
-            return _repository.find(NSU);
+            return _repository.Find(NSU);
         }
 
         private decimal ValueTransaction(decimal valueTransaction)
         {
             return valueTransaction - TaxFixed;
+        }
+
+        public IEnumerable<Transaction> FindAvailable()
+        {
+            return _repository.FindAvailable();
         }
     }
 }

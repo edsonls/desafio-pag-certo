@@ -9,6 +9,9 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="Anticipations" t="Include">
+            <e p="AnticipationController.cs" t="Include" />
+          </e>
           <e p="Transactions" t="Include">
             <e p="TransactionController.cs" t="Include" />
           </e>

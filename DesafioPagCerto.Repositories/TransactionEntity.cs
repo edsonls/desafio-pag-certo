@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DesafioPagCerto.Entities;
 using DesafioPagCerto.Repository.EntityFramework.Drive;
@@ -20,7 +21,7 @@ namespace DesafioPagCerto.Repository
             return model.NSU;
         }
 
-        public Transaction find(Guid NSU)
+        public Transaction Find(Guid NSU)
         {
             using var drive = new Drive();
             return ToEntity(drive.Transaction
@@ -114,6 +115,15 @@ namespace DesafioPagCerto.Repository
                 installment.TransferDate,
                 installment.Transaction.NSU
             );
+        }
+
+        public IEnumerable<Transaction> FindAvailable()
+        {
+            using var drive = new Drive();
+            return drive.Transaction
+                .Where(t => !t.Anticipation && t.Confirmation)
+                .Include(transaction => transaction.Installments)
+                .ToList().Select(ToEntity);
         }
     }
 }
