@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using DesafioPagCerto.Entities;
 using DesafioPagCerto.Entities.Transactions;
 
 namespace DesafioPagCerto.Services.Interfaces
@@ -10,5 +9,6 @@ namespace DesafioPagCerto.Services.Interfaces
         Guid CreateTransaction(string numberCard, int numberParcel, decimal valueTransaction);
         IEnumerable<Installment> CreateInstallments(int numberInstallment, decimal valueTransaction);
         Transaction FindTransaction(Guid NSU);
+        IEnumerable<Transaction> FindAvailable();
     }
 }

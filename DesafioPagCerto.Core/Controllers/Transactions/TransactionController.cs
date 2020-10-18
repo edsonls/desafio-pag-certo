@@ -1,9 +1,9 @@
 ﻿using System;
-using DesafioPagCerto.Entities;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
 using DesafioPagCerto.Services;
+using DesafioPagCerto.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesafioPagCerto.Controllers.Transactions
@@ -12,18 +12,19 @@ namespace DesafioPagCerto.Controllers.Transactions
     [Route("v1/transaction")]
     public class TransactionController : ControllerBase
     {
+        private readonly ITransactionService _transactionService = new TransactionService(new TransactionEntity());
+
         [HttpPost]
         public Guid Save([FromBody] TransactionRequest transactionRequest)
         {
-            var service = new TransactionService(new TransactionEntity());
-            return service.CreateTransaction(transactionRequest.CardNumber, transactionRequest.ParcelNumber,
+            return _transactionService.CreateTransaction(transactionRequest.CardNumber, transactionRequest.ParcelNumber,
                 transactionRequest.TransactionValue);
         }
+
         [HttpGet("{nsu}")]
         public Transaction Find(Guid nsu)
         {
-            var service = new TransactionService(new TransactionEntity());
-            return service.FindTransaction(nsu);
+            return _transactionService.FindTransaction(nsu);
         }
     }
 }
