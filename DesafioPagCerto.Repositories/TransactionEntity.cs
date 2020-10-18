@@ -8,7 +8,7 @@ namespace DesafioPagCerto.Repository
     {
         public bool Save(Transaction transaction)
         {
-            Console.WriteLine(transaction);
+            var t = transaction;
             return true;
         }
     }

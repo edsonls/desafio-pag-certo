@@ -7,11 +7,11 @@ namespace DesafioPagCerto.Requests
         [StringLength(16, MinimumLength = 16)]
         [Required]
         // [CreditCard] todo ativar por ultimo
-        // [RegularExpression(@"^5999")]
+        [RegularExpression(@"(^(?!5999)\w+$)|([^-\s])")]
         public string CardNumber { get; set; }
         [Required]
         public int ParcelNumber { get; set; }
         [Required]
-        public double TransactionValue { get; set; }
+        public decimal TransactionValue { get; set; }
     }
 }

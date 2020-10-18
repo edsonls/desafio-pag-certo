@@ -5,51 +5,65 @@ namespace DesafioPagCerto.Entities
 {
     public class Transaction
     {
-        private int NSU { get; }
-        private DateTime DateTransaction { get; }
-        private DateTime DateApproved { get; }
-        private DateTime DateReapproved { get; }
-        private bool Anticipation { get; }
-        private bool Confirmation { get; }
-        private double GrossValue { get; }
-        private double NetValue { get; }
-        private double TaxFixed { get; }
-        private int NumberParcel { get; }
-        private string CredCard { get; }
-        private IEnumerable<Parcel> Parcels { get; }
+        public int NSU { get; }
+        public DateTime TransactionDate { get; }
+        public DateTime ApprovedDate { get; private set; }
+        public DateTime ReprovedDate { get; private set; }
+        public bool Anticipation { get; }
+        public bool Confirmation { get; }
+        public decimal GrossValue { get; }
+        public decimal NetValue { get; }
+        public decimal FixedTax { get; }
+        public int NumberParcel { get; }
+        public string CreditCardSuffix { get; }
+        public IEnumerable<Installment> Installments { get; private set; }
 
-        public Transaction(int nsu, DateTime dateTransaction, DateTime dateApproved, DateTime dateReapproved,
-            bool anticipation, bool confirmation, double grossValue, double netValue, double taxFixed,
-            int numberParcel, string credCard)
+        public Transaction(int nsu, DateTime transactionDate, DateTime approvedDate, DateTime reprovedDate,
+            bool anticipation, bool confirmation, decimal grossValue, decimal netValue, decimal fixedTax,
+            int numberParcel, string creditCardSuffix)
         {
             NSU = nsu;
-            DateTransaction = dateTransaction;
-            DateApproved = dateApproved;
-            DateReapproved = dateReapproved;
+            TransactionDate = transactionDate;
+            ApprovedDate = approvedDate;
+            ReprovedDate = reprovedDate;
             Anticipation = anticipation;
             Confirmation = confirmation;
             GrossValue = grossValue;
             NetValue = netValue;
-            TaxFixed = taxFixed;
+            FixedTax = fixedTax;
             NumberParcel = numberParcel;
-            CredCard = credCard;
+            CreditCardSuffix = creditCardSuffix;
         }
 
-        public Transaction(DateTime dateTransaction, double grossValue, double netValue, double taxFixed,
-            int numberParcel, string credCard, IEnumerable<Parcel> parcels)
+        public Transaction(DateTime transactionDate, decimal grossValue, decimal netValue, decimal fixedTax,
+            int numberParcel, string creditCardSuffix)
         {
-            DateTransaction = dateTransaction;
+            TransactionDate = transactionDate;
             GrossValue = grossValue;
             NetValue = netValue;
-            TaxFixed = taxFixed;
+            FixedTax = fixedTax;
             NumberParcel = numberParcel;
-            CredCard = credCard;
-            Parcels = parcels;
+            CreditCardSuffix = creditCardSuffix;
         }
 
         public Transaction()
         {
             throw new NotImplementedException();
+        }
+
+        public void Approved()
+        {
+            ApprovedDate = DateTime.Now;
+        }
+
+        public void Reproved()
+        {
+            ReprovedDate = DateTime.Now;
+        }
+
+        public void AddInstallments(IEnumerable<Installment> installments)
+        {
+            Installments = installments;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace DesafioPagCerto.Services
 {
     public class TransactionService : ITransactionService
     {
-        private const double TaxFixed = 0.90;
+        private const decimal TaxFixed = (decimal) 0.90;
         private readonly ITransactionRepository _repository;
 
         public TransactionService(ITransactionRepository repository)
@@ -16,44 +16,51 @@ namespace DesafioPagCerto.Services
             _repository = repository;
         }
 
-        public bool Save(Transaction transaction)
-        {
-            return _repository.Save(transaction);
-        }
-
-        public Transaction CreateTransaction(string numberCard, int numberParcel,
-            double valueTransaction)
+        public Transaction CreateTransaction(string numberCard, int numberInstallment,
+            decimal valueTransaction)
         {
             var transaction = new Transaction(
                 DateTime.Now,
                 valueTransaction,
                 ValueTransaction(valueTransaction),
                 TaxFixed,
-                numberParcel,
-                numberCard.Substring(-1, 4),
-                CreateParcels(numberParcel, valueTransaction)
+                numberInstallment,
+                numberCard.Substring(numberCard.Length - 4)
             );
+
+            if (ApprovedTransaction(transaction))
+            {
+                transaction.Approved();
+                transaction.AddInstallments(CreateInstallments(numberInstallment, valueTransaction));
+            }
+            else
+            {
+                transaction.Reproved();
+            }
+
             _repository.Save(transaction);
             return transaction;
         }
 
-        private IEnumerable<Parcel> CreateParcels(int numberParcel, double valueTransaction)
+        private bool ApprovedTransaction(Transaction transaction) => 1000 > transaction.GrossValue;
+
+        public IEnumerable<Installment> CreateInstallments(int numberInstallment, decimal valueTransaction)
         {
-            var parcels = new List<Parcel>();
-            var netValueForParcel = ValueTransaction(valueTransaction) / numberParcel;
-            var grossValueForParcel = valueTransaction / numberParcel;
-            var now = DateTime.Now;
-            for (var i = 0; i < numberParcel; i++)
+            var installments = new List<Installment>();
+            var netValueForInstallment = ValueTransaction(valueTransaction) / numberInstallment;
+            var grossValueForInstallment = valueTransaction / numberInstallment;
+            for (var i = 0; i < numberInstallment; i++)
             {
-                parcels.Add(new Parcel(i, grossValueForParcel, netValueForParcel, now.AddDays(30)));
+                installments.Add(new Installment(i, grossValueForInstallment, netValueForInstallment,
+                    DateTime.Now.AddMonths(i + 1)));
             }
 
-            return parcels;
+            return installments;
         }
 
-        private double ValueTransaction(double valueTransaction)
+        private decimal ValueTransaction(decimal valueTransaction)
         {
-            return (valueTransaction - TaxFixed);
+            return valueTransaction - TaxFixed;
         }
     }
 }

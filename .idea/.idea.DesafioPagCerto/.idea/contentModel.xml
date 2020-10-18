@@ -33,6 +33,7 @@
       <e p="DesafioPagCerto.Entities" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="DesafioPagCerto.Entities.csproj" t="IncludeRecursive" />
+        <e p="Installment.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -40,7 +41,6 @@
             </e>
           </e>
         </e>
-        <e p="Parcel.cs" t="Include" />
         <e p="Transaction.cs" t="Include" />
       </e>
       <e p="DesafioPagCerto.Repositories" t="IncludeRecursive">
