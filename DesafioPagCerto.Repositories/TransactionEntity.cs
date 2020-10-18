@@ -111,7 +111,8 @@ namespace DesafioPagCerto.Repository
                 installment.NetValue,
                 installment.AnticipationValue,
                 installment.ExpectedDate,
-                installment.TransferDate
+                installment.TransferDate,
+                installment.Transaction.NSU
             );
         }
     }

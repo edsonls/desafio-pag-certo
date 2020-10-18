@@ -1,10 +1,14 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DesafioPagCerto.Repository.EntityFramework.Models
 {
     public class Installment
     {
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
+        public Guid Id { get; set; }
         public int NumberParcel { get; set; }
         public decimal GrossValue { get; set; }
         public decimal NetValue { get; set; }

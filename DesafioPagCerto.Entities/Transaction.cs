@@ -11,7 +11,7 @@ namespace DesafioPagCerto.Entities
         public DateTime? ApprovedDate { get; private set; }
         public DateTime? ReprovedDate { get; private set; }
         public bool Anticipation { get; }
-        public bool Confirmation { get; }
+        public bool Confirmation { get; private set; }
         public decimal GrossValue { get; }
         public decimal NetValue { get; }
         public decimal FixedTax { get; }
@@ -73,6 +73,7 @@ namespace DesafioPagCerto.Entities
         public void Approved()
         {
             ApprovedDate = DateTime.Now;
+            Confirmation = true;
         }
 
         public void Reproved()
