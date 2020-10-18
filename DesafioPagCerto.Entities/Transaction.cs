@@ -8,8 +8,8 @@ namespace DesafioPagCerto.Entities
     {
         public Guid NSU { get; }
         public DateTime TransactionDate { get; }
-        public DateTime ApprovedDate { get; private set; }
-        public DateTime ReprovedDate { get; private set; }
+        public DateTime? ApprovedDate { get; private set; }
+        public DateTime? ReprovedDate { get; private set; }
         public bool Anticipation { get; }
         public bool Confirmation { get; }
         public decimal GrossValue { get; }
@@ -19,7 +19,7 @@ namespace DesafioPagCerto.Entities
         public string CreditCardSuffix { get; }
         public IEnumerable<Installment> Installments { get; private set; }
 
-        public Transaction(Guid nsu, DateTime transactionDate, DateTime approvedDate, DateTime reprovedDate,
+        public Transaction(Guid nsu, DateTime transactionDate, DateTime? approvedDate, DateTime? reprovedDate,
             bool anticipation, bool confirmation, decimal grossValue, decimal netValue, decimal fixedTax,
             int numberParcel, string creditCardSuffix)
         {
@@ -36,7 +36,7 @@ namespace DesafioPagCerto.Entities
             CreditCardSuffix = creditCardSuffix;
         }
 
-        public Transaction(Guid nsu, DateTime transactionDate, DateTime approvedDate, DateTime reprovedDate,
+        public Transaction(Guid nsu, DateTime transactionDate, DateTime? approvedDate, DateTime? reprovedDate,
             bool anticipation, bool confirmation, decimal grossValue, decimal netValue, decimal fixedTax,
             int numberParcel, string creditCardSuffix, IEnumerable<Installment> installments)
         {
@@ -82,8 +82,7 @@ namespace DesafioPagCerto.Entities
 
         public void AddInstallments(IEnumerable<Installment> installments)
         {
-            if (!Installments.Any())
-                Installments = installments;
+            Installments ??= installments;
         }
     }
 }

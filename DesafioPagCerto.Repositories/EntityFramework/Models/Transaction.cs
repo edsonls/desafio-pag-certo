@@ -12,8 +12,8 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
         public Guid NSU { get; set; }
 
         public DateTime TransactionDate { get; set; }
-        public DateTime ApprovedDate { get; set; }
-        public DateTime ReprovedDate { get; set; }
+        public DateTime? ApprovedDate { get; set; }
+        public DateTime? ReprovedDate { get; set; }
         public bool Anticipation { get; set; }
         public bool Confirmation { get; set; }
         public decimal GrossValue { get; set; }

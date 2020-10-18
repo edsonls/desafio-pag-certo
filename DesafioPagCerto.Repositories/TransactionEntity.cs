@@ -31,36 +31,62 @@ namespace DesafioPagCerto.Repository
 
         private Transaction ToEntity(TransactionModel transactionModel)
         {
-            return new Transaction(transactionModel.NSU,
-                transactionModel.TransactionDate,
-                transactionModel.ApprovedDate,
-                transactionModel.ReprovedDate,
-                transactionModel.Anticipation,
-                transactionModel.Confirmation,
-                transactionModel.GrossValue,
-                transactionModel.NetValue,
-                transactionModel.FixedTax,
-                transactionModel.NumberParcel,
-                transactionModel.CreditCardSuffix,
-                transactionModel.Installments.Select(ToEntity()).ToList());
+            return transactionModel.Installments != null && transactionModel.Installments.Any()
+                ? new Transaction(transactionModel.NSU,
+                    transactionModel.TransactionDate,
+                    transactionModel.ApprovedDate,
+                    transactionModel.ReprovedDate,
+                    transactionModel.Anticipation,
+                    transactionModel.Confirmation,
+                    transactionModel.GrossValue,
+                    transactionModel.NetValue,
+                    transactionModel.FixedTax,
+                    transactionModel.NumberParcel,
+                    transactionModel.CreditCardSuffix,
+                    transactionModel.Installments.Select(ToEntity()).ToList())
+                : new Transaction(transactionModel.NSU,
+                    transactionModel.TransactionDate,
+                    transactionModel.ApprovedDate,
+                    transactionModel.ReprovedDate,
+                    transactionModel.Anticipation,
+                    transactionModel.Confirmation,
+                    transactionModel.GrossValue,
+                    transactionModel.NetValue,
+                    transactionModel.FixedTax,
+                    transactionModel.NumberParcel,
+                    transactionModel.CreditCardSuffix);
         }
 
         private static TransactionModel ToModel(Transaction transaction)
         {
-            return new TransactionModel()
-            {
-                Anticipation = transaction.Anticipation,
-                Confirmation = transaction.Confirmation,
-                ApprovedDate = transaction.ApprovedDate,
-                FixedTax = transaction.FixedTax,
-                GrossValue = transaction.GrossValue,
-                NetValue = transaction.NetValue,
-                NumberParcel = transaction.NumberParcel,
-                ReprovedDate = transaction.ReprovedDate,
-                TransactionDate = transaction.TransactionDate,
-                CreditCardSuffix = transaction.CreditCardSuffix,
-                Installments = transaction.Installments.Select(ToModel()).ToList()
-            };
+            return transaction.Installments != null && transaction.Installments.Any()
+                ? new TransactionModel
+                {
+                    Anticipation = transaction.Anticipation,
+                    Confirmation = transaction.Confirmation,
+                    ApprovedDate = transaction.ApprovedDate,
+                    FixedTax = transaction.FixedTax,
+                    GrossValue = transaction.GrossValue,
+                    NetValue = transaction.NetValue,
+                    NumberParcel = transaction.NumberParcel,
+                    ReprovedDate = transaction.ReprovedDate,
+                    TransactionDate = transaction.TransactionDate,
+                    CreditCardSuffix = transaction.CreditCardSuffix,
+                    Installments = transaction.Installments.Select(ToModel()).ToList()
+                }
+                : new TransactionModel
+                {
+                    Anticipation = transaction.Anticipation,
+                    Confirmation = transaction.Confirmation,
+                    ApprovedDate = transaction.ApprovedDate,
+                    FixedTax = transaction.FixedTax,
+                    GrossValue = transaction.GrossValue,
+                    NetValue = transaction.NetValue,
+                    NumberParcel = transaction.NumberParcel,
+                    ReprovedDate = transaction.ReprovedDate,
+                    TransactionDate = transaction.TransactionDate,
+                    CreditCardSuffix = transaction.CreditCardSuffix
+                };
         }
 
         private static Func<Installment, InstallmentModel> ToModel()
