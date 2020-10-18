@@ -29,11 +29,15 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Requests" t="Include">
+          <e p="AnticipationRequest.cs" t="Include" />
           <e p="TransactionRequest.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
       </e>
       <e p="DesafioPagCerto.Entities" t="IncludeRecursive">
+        <e p="Anticipations" t="Include">
+          <e p="Anticipations.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="DesafioPagCerto.Entities.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -48,7 +52,21 @@
           <e p="Transaction.cs" t="Include" />
         </e>
       </e>
+      <e p="DesafioPagCerto.Enum" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DesafioPagCerto.Enum.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DesafioPagCerto.Enum.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ResultAnalysisEnum.cs" t="Include" />
+        <e p="StatusAnticipationsEnum.cs" t="Include" />
+      </e>
       <e p="DesafioPagCerto.Repositories" t="IncludeRecursive">
+        <e p="AnticipationEntity.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="DesafioPagCerto.Repositories.csproj" t="IncludeRecursive" />
         <e p="EntityFramework" t="Include">
@@ -61,6 +79,7 @@
           </e>
         </e>
         <e p="Interfaces" t="Include">
+          <e p="IAnticipationRepository.cs" t="Include" />
           <e p="ITransactionRepository.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
@@ -78,9 +97,11 @@
         <e p="TransactionEntity.cs" t="Include" />
       </e>
       <e p="DesafioPagCerto.Services" t="IncludeRecursive">
+        <e p="AnticipationService.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="DesafioPagCerto.Services.csproj" t="IncludeRecursive" />
         <e p="Interfaces" t="Include">
+          <e p="IAnticipationService.cs" t="Include" />
           <e p="ITransactionService.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

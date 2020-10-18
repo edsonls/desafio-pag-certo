@@ -1512,11 +1512,22 @@
         }
       },
       "DesafioPagCerto.Entities/1.0.0": {
+        "dependencies": {
+          "DesafioPagCerto.Enum": "1.0.0"
+        },
         "runtime": {
           "DesafioPagCerto.Entities.dll": {}
         },
         "compile": {
           "DesafioPagCerto.Entities.dll": {}
+        }
+      },
+      "DesafioPagCerto.Enum/1.0.0": {
+        "runtime": {
+          "DesafioPagCerto.Enum.dll": {}
+        },
+        "compile": {
+          "DesafioPagCerto.Enum.dll": {}
         }
       },
       "DesafioPagCerto.Repositories/1.0.0": {
@@ -3884,6 +3895,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "DesafioPagCerto.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DesafioPagCerto.Enum/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

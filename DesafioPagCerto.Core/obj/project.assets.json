@@ -1781,11 +1781,24 @@
       "DesafioPagCerto.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "DesafioPagCerto.Enum": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DesafioPagCerto.Entities.dll": {}
         },
         "runtime": {
           "bin/placeholder/DesafioPagCerto.Entities.dll": {}
+        }
+      },
+      "DesafioPagCerto.Enum/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DesafioPagCerto.Enum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesafioPagCerto.Enum.dll": {}
         }
       },
       "DesafioPagCerto.Repositories/1.0.0": {
@@ -6714,6 +6727,11 @@
       "type": "project",
       "path": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj",
       "msbuildProject": "../DesafioPagCerto.Entities/DesafioPagCerto.Entities.csproj"
+    },
+    "DesafioPagCerto.Enum/1.0.0": {
+      "type": "project",
+      "path": "../DesafioPagCerto.Enum/DesafioPagCerto.Enum.csproj",
+      "msbuildProject": "../DesafioPagCerto.Enum/DesafioPagCerto.Enum.csproj"
     },
     "DesafioPagCerto.Repositories/1.0.0": {
       "type": "project",

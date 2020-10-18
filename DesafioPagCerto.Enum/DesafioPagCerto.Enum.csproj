@@ -4,8 +4,4 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\DesafioPagCerto.Enum\DesafioPagCerto.Enum.csproj" />
-    </ItemGroup>
-
 </Project>
