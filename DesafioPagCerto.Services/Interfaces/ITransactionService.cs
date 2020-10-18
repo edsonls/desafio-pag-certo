@@ -9,5 +9,6 @@ namespace DesafioPagCerto.Services.Interfaces
     
         Guid CreateTransaction(string numberCard, int numberParcel, decimal valueTransaction);
         IEnumerable<Installment> CreateInstallments(int numberInstallment, decimal valueTransaction);
+        Transaction FindTransaction(Guid NSU);
     }
 }

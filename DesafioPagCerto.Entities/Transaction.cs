@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DesafioPagCerto.Entities
 {
@@ -35,6 +36,24 @@ namespace DesafioPagCerto.Entities
             CreditCardSuffix = creditCardSuffix;
         }
 
+        public Transaction(Guid nsu, DateTime transactionDate, DateTime approvedDate, DateTime reprovedDate,
+            bool anticipation, bool confirmation, decimal grossValue, decimal netValue, decimal fixedTax,
+            int numberParcel, string creditCardSuffix, IEnumerable<Installment> installments)
+        {
+            NSU = nsu;
+            TransactionDate = transactionDate;
+            ApprovedDate = approvedDate;
+            ReprovedDate = reprovedDate;
+            Anticipation = anticipation;
+            Confirmation = confirmation;
+            GrossValue = grossValue;
+            NetValue = netValue;
+            FixedTax = fixedTax;
+            NumberParcel = numberParcel;
+            CreditCardSuffix = creditCardSuffix;
+            Installments = installments;
+        }
+
         public Transaction(DateTime transactionDate, decimal grossValue, decimal netValue, decimal fixedTax,
             int numberParcel, string creditCardSuffix)
         {
@@ -63,7 +82,8 @@ namespace DesafioPagCerto.Entities
 
         public void AddInstallments(IEnumerable<Installment> installments)
         {
-            Installments = installments;
+            if (!Installments.Any())
+                Installments = installments;
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Linq;
 using DesafioPagCerto.Entities;
 using DesafioPagCerto.Repository.EntityFramework.Drive;
 using DesafioPagCerto.Repository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using TransactionModel = DesafioPagCerto.Repository.EntityFramework.Models.Transaction;
 using InstallmentModel = DesafioPagCerto.Repository.EntityFramework.Models.Installment;
 
@@ -17,6 +18,31 @@ namespace DesafioPagCerto.Repository
             drive.Transaction.Add(model);
             drive.SaveChanges();
             return model.NSU;
+        }
+
+        public Transaction find(Guid NSU)
+        {
+            using var drive = new Drive();
+            return ToEntity(drive.Transaction
+                .Where(t => t.NSU == NSU)
+                .Include(transaction => transaction.Installments)
+                .FirstOrDefault());
+        }
+
+        private Transaction ToEntity(TransactionModel transactionModel)
+        {
+            return new Transaction(transactionModel.NSU,
+                transactionModel.TransactionDate,
+                transactionModel.ApprovedDate,
+                transactionModel.ReprovedDate,
+                transactionModel.Anticipation,
+                transactionModel.Confirmation,
+                transactionModel.GrossValue,
+                transactionModel.NetValue,
+                transactionModel.FixedTax,
+                transactionModel.NumberParcel,
+                transactionModel.CreditCardSuffix,
+                transactionModel.Installments.Select(ToEntity()).ToList());
         }
 
         private static TransactionModel ToModel(Transaction transaction)
@@ -48,6 +74,19 @@ namespace DesafioPagCerto.Repository
                 NumberParcel = installment.NumberParcel,
                 TransferDate = installment.TransferDate,
             };
+        }
+
+        private static Func<InstallmentModel, Installment> ToEntity()
+        {
+            return installment => new Installment(
+                installment.Id,
+                installment.NumberParcel,
+                installment.GrossValue,
+                installment.NetValue,
+                installment.AnticipationValue,
+                installment.ExpectedDate,
+                installment.TransferDate
+            );
         }
     }
 }

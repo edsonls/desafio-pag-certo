@@ -57,6 +57,11 @@ namespace DesafioPagCerto.Services
             return installments;
         }
 
+        public Transaction FindTransaction(Guid NSU)
+        {
+            return _repository.find(NSU);
+        }
+
         private decimal ValueTransaction(decimal valueTransaction)
         {
             return valueTransaction - TaxFixed;
