@@ -36,7 +36,7 @@
       </e>
       <e p="DesafioPagCerto.Entities" t="IncludeRecursive">
         <e p="Anticipations" t="Include">
-          <e p="Anticipations.cs" t="Include" />
+          <e p="Anticipation.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="DesafioPagCerto.Entities.csproj" t="IncludeRecursive" />
