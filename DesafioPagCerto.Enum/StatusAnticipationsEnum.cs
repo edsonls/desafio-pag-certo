@@ -2,7 +2,7 @@
 {
     public enum StatusAnticipations
     {
-        Wait = 1,
+        Pending = 1,
         InAnalysis = 2,
         Finish = 3
     }

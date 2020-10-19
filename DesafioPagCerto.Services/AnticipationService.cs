@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using DesafioPagCerto.Entities.Anticipations;
 using DesafioPagCerto.Entities.Transactions;
+using DesafioPagCerto.Enum;
 using DesafioPagCerto.Repository.Interfaces;
 using DesafioPagCerto.Services.Interfaces;
 
@@ -30,6 +32,28 @@ namespace DesafioPagCerto.Services
                 enumerable.Sum(t => t.NetValue),
                 enumerable.ToList());
             return _repository.Save(anticipation);
+        }
+
+        public Anticipation Start(Guid anticipationId)
+        {
+            var anticipation = Find(anticipationId);
+            if (anticipation.StatusAnticipation != StatusAnticipations.Pending)
+            {
+                throw new HttpRequestException("O status da antecipação precisa ser pendente!");
+            }
+
+            anticipation.Start();
+            if (!_repository.Edit(anticipation))
+            {
+                throw new HttpRequestException("Erro!");
+            }
+
+            return anticipation;
+        }
+
+        private Anticipation Find(Guid id)
+        {
+            return _repository.Find(id);
         }
 
         public bool AnticipationInOpen()

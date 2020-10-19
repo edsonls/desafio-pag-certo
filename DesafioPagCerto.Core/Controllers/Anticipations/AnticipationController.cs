@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DesafioPagCerto.Entities.Anticipations;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
@@ -29,6 +30,12 @@ namespace DesafioPagCerto.Controllers.Anticipations
             var t = anticipations.Select(a =>
                 _transactionService.FindTransaction(a.nsu));
             return _anticipationService.CreateAnticipation(t);
+        }
+
+        [HttpPut("start/{anticipationId}")]
+        public Anticipation Start(Guid anticipationId)
+        {
+            return _anticipationService.Start(anticipationId);
         }
     }
 }

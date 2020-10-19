@@ -8,5 +8,7 @@ namespace DesafioPagCerto.Repository.Interfaces
         bool AnticipationInOpen();
         
         public Guid Save(Anticipation anticipation);
+        Anticipation Find(Guid id);
+        bool Edit(Anticipation anticipation);
     }
 }

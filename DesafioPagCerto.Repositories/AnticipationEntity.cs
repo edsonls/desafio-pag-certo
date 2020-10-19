@@ -4,6 +4,7 @@ using DesafioPagCerto.Repository.EntityFramework.Drive;
 using DesafioPagCerto.Entities.Anticipations;
 using DesafioPagCerto.Enum;
 using DesafioPagCerto.Repository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using AnticipationModel = DesafioPagCerto.Repository.EntityFramework.Models.Anticipation;
 using TransactionModel = DesafioPagCerto.Repository.EntityFramework.Models.Transaction;
 
@@ -17,7 +18,7 @@ namespace DesafioPagCerto.Repository
         {
             return _drive.Anticipation.Any(a =>
                 a.StatusAnticipation == StatusAnticipations.InAnalysis ||
-                a.StatusAnticipation == StatusAnticipations.Wait);
+                a.StatusAnticipation == StatusAnticipations.Pending);
         }
 
         public Guid Save(Anticipation anticipation)
@@ -42,6 +43,22 @@ namespace DesafioPagCerto.Repository
             }
         }
 
+        public Anticipation Find(Guid id)
+        {
+            return ToEntity(_drive.Anticipation
+                .Where(a => a.Id == id)
+                .Include(a => a.Transactions)
+                .First());
+        }
+
+        public bool Edit(Anticipation anticipation)
+        {
+            var anticipationModel = ToModel(anticipation);
+            _drive.Anticipation.First(a => a.Id == anticipation.Id);
+            _drive.Anticipation.Update(anticipationModel);
+            return _drive.SaveChanges() > 0;
+        }
+
         private AnticipationModel ToModel(Anticipation anticipation)
         {
             return new AnticipationModel
@@ -54,6 +71,23 @@ namespace DesafioPagCerto.Repository
                 AnalysisEndDate = anticipation.AnalysisEndDate,
                 AnalysisStartDate = anticipation.AnalysisStartDate
             };
+        }
+
+        private Anticipation ToEntity(AnticipationModel anticipation)
+        {
+            var repositoryTransaction = new TransactionEntity();
+            return new Anticipation
+            (
+                anticipatedAmount: anticipation.AnticipatedAmount,
+                requestedAmount: anticipation.RequestedAmount,
+                resultAnalysis: anticipation.ResultAnalysis,
+                solicitationDate: anticipation.SolicitationDate,
+                statusAnticipation: anticipation.StatusAnticipation,
+                analysisEndDate: anticipation.AnalysisEndDate,
+                analysisStartDate: anticipation.AnalysisStartDate,
+                id: anticipation.Id,
+                transactions: anticipation.Transactions.Select(at => repositoryTransaction.Find(at.NSU))
+            );
         }
     }
 }
