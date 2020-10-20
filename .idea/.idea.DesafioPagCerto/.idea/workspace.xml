@@ -13,29 +13,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Criando Exception personalizada">
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Adicionando Teste e adequando o codigo">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.sln" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,8 +127,8 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionEntity.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" />
       </list>
     </option>
@@ -218,7 +199,7 @@
       <workItem from="1602979404420" duration="1470000" />
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
-      <workItem from="1603027503046" duration="54629000" />
+      <workItem from="1603027503046" duration="55279000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -458,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603210010462</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Adicionando Teste e adequando o codigo">
+      <created>1603213235559</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1603213235559</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +468,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Criando Metodo para criar parcela" />
     <MESSAGE value="Trocando por Validate data annotations" />
     <MESSAGE value="Ajustando Regra de negocio" />
     <MESSAGE value="Cadastrando no Banco com EntityFramework" />
@@ -505,7 +492,8 @@
     <MESSAGE value="Ajuste nas Exceptions" />
     <MESSAGE value="Refatoração" />
     <MESSAGE value="Criando Exception personalizada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando Exception personalizada" />
+    <MESSAGE value="Adicionando Teste e adequando o codigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Teste e adequando o codigo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2342" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602975174953">
@@ -679,24 +667,5 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2601" y="187" key="run.anything.popup/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603205770486" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Services\TransactionService.cs" initialLine="32">
-            <startOffsets>
-              <option value="1048" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1084" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

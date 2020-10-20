@@ -36,10 +36,60 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
+        public void TestCreateTransactionNumberCardOK()
+        {
+            var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
+            if (tra.Confirmation)
+                Assert.Pass("Ok");
+            else
+                Assert.Fail("Error");
+        }
+
+        [Test]
+        public void TestCreateTransactionNumberCardNotOK()
+        {
+            var tra = _transactionService.CreateTransaction("5999999999999999", 2, 1000);
+            if (!tra.Confirmation)
+                Assert.Pass("Ok");
+            else
+                Assert.Fail("Error");
+        }
+
+        [Test]
+        public void TestCreateTransactionNumberCardLenghtOK()
+        {
+            var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
+            if (tra.Confirmation)
+                Assert.Pass("Ok");
+            else
+                Assert.Fail("Error");
+        }
+
+        [Test]
+        public void TestCreateTransactionNumberCardLenghtMinorOK()
+        {
+            var tra = _transactionService.CreateTransaction("59099999999999", 2, 1000);
+            if (!tra.Confirmation)
+                Assert.Pass("Ok");
+            else
+                Assert.Fail("Error");
+        }
+
+        [Test]
+        public void TestCreateTransactionNumberCardLenghtLargerOK()
+        {
+            var tra = _transactionService.CreateTransaction("59099999999997999", 2, 1000);
+            if (!tra.Confirmation)
+                Assert.Pass("Ok");
+            else
+                Assert.Fail("Error");
+        }
+
+        [Test]
         public void TestCreateTransactionConfirmationOK()
         {
-            var re = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
-            if (re.Confirmation)
+            var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
+            if (tra.Confirmation)
                 Assert.Pass("Ok");
             else
                 Assert.Fail("Error");
@@ -48,8 +98,8 @@ namespace DesafioPagCerto.Tests
         [Test]
         public void TestCreateTransactionConfirmationNotOK()
         {
-            var re = _transactionService.CreateTransaction("5999999999999999", 2, 1000);
-            if (!re.Confirmation)
+            var tra = _transactionService.CreateTransaction("5999999999999999", 2, 1000);
+            if (!tra.Confirmation)
                 Assert.Pass("Ok");
             else
                 Assert.Fail("Error");

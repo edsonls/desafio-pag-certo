@@ -43,7 +43,11 @@ namespace DesafioPagCerto.Services
             return _repository.Save(transaction);
         }
 
-        private bool ApprovedTransaction(string numberCard) => numberCard.Substring(0, 4) != "5999";
+        private bool ApprovedTransaction(string numberCard)
+        {
+            return Regex.Replace(numberCard, @"\s+", "").Length == 16 &&
+                   numberCard.Substring(0, 4) != "5999";
+        }
 
         public IEnumerable<Installment> CreateInstallments(int numberInstallment, decimal valueTransaction)
         {
