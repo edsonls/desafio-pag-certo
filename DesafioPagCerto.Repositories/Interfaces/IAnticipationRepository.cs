@@ -14,7 +14,7 @@ namespace DesafioPagCerto.Repository.Interfaces
         bool Edit(Anticipation anticipation);
         Anticipation Reproved(Anticipation anticipation);
         Anticipation Approved(Anticipation anticipation);
-        IEnumerable<Anticipation> ListAll(ResultAnalysisEnum? status);
+        IEnumerable<Anticipation> ListAll(StatusAnticipations? status);
         bool Exist(Guid id);
     }
 }

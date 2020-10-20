@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using DesafioPagCerto.Entities;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Repository.Interfaces;
 using DesafioPagCerto.Services.Interfaces;

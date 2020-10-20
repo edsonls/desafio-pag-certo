@@ -109,7 +109,7 @@ namespace DesafioPagCerto.Repository
             return Find(anticipation.Id);
         }
 
-        public IEnumerable<Anticipation> ListAll(ResultAnalysisEnum? status)
+        public IEnumerable<Anticipation> ListAll(StatusAnticipations? status)
         {
             return status == null
                 ? _drive.Anticipation
@@ -118,7 +118,7 @@ namespace DesafioPagCerto.Repository
                     .Select(ToEntity)
                 : _drive.Anticipation
                     .Include("Transactions")
-                    .Where(a => a.ResultAnalysis == status)
+                    .Where(a => a.StatusAnticipation == status)
                     .ToList()
                     .Select(ToEntity);
         }

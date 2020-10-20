@@ -12,6 +12,6 @@ namespace DesafioPagCerto.Services.Interfaces
         Anticipation Start(Guid anticipationId);
         Anticipation Finish(Guid anticipationId, IEnumerable<Guid> transactionsApproved);
         bool AnticipationInOpen();
-        IEnumerable<Anticipation> ListAll(ResultAnalysisEnum? status);
+        IEnumerable<Anticipation> ListAll(StatusAnticipations? status);
     }
 }

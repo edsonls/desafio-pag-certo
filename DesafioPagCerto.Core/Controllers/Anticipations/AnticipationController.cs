@@ -35,7 +35,7 @@ namespace DesafioPagCerto.Controllers.Anticipations
 
         [HttpGet]
         [HttpGet("{status}")]
-        public IEnumerable<Anticipation> List(ResultAnalysisEnum? status = null)
+        public IEnumerable<Anticipation> List(StatusAnticipations? status = null)
         {
             return _anticipationService.ListAll(status);
         }
