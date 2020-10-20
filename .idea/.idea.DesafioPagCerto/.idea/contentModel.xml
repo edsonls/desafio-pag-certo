@@ -118,6 +118,7 @@
           </e>
         </e>
         <e p="Tests" t="Include">
+          <e p="AnticipationEntity.cs" t="Include" />
           <e p="TransactionMock.cs" t="Include" />
         </e>
         <e p="TransactionEntity.cs" t="Include" />
