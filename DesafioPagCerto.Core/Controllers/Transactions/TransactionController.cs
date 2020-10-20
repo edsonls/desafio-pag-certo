@@ -1,4 +1,5 @@
 ﻿using System;
+using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
@@ -15,7 +16,7 @@ namespace DesafioPagCerto.Controllers.Transactions
         private readonly ITransactionService _transactionService = new TransactionService(new TransactionEntity());
 
         [HttpPost]
-        public Guid Save([FromBody] TransactionRequest transactionRequest)
+        public Transaction Save([FromBody] TransactionRequest transactionRequest)
         {
             return _transactionService.CreateTransaction(transactionRequest.CardNumber, transactionRequest.ParcelNumber,
                 transactionRequest.TransactionValue);

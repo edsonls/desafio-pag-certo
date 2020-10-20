@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository.Interfaces;
@@ -17,7 +18,7 @@ namespace DesafioPagCerto.Services
             _repository = repository;
         }
 
-        public Guid CreateTransaction(string numberCard, int numberInstallment,
+        public Transaction CreateTransaction(string numberCard, int numberInstallment,
             decimal valueTransaction)
         {
             var transaction = new Transaction(
@@ -29,7 +30,7 @@ namespace DesafioPagCerto.Services
                 numberCard.Substring(numberCard.Length - 4)
             );
 
-            if (ApprovedTransaction(transaction))
+            if (ApprovedTransaction(numberCard))
             {
                 transaction.Approved();
                 transaction.AddInstallments(CreateInstallments(numberInstallment, valueTransaction));
@@ -42,7 +43,7 @@ namespace DesafioPagCerto.Services
             return _repository.Save(transaction);
         }
 
-        private bool ApprovedTransaction(Transaction transaction) => 1000 > transaction.GrossValue;
+        private bool ApprovedTransaction(string numberCard) => numberCard.Substring(0, 4) != "5999";
 
         public IEnumerable<Installment> CreateInstallments(int numberInstallment, decimal valueTransaction)
         {

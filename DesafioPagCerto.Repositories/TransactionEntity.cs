@@ -14,12 +14,12 @@ namespace DesafioPagCerto.Repository
     {
         private readonly Drive _drive = new Drive();
 
-        public Guid Save(Transaction transaction)
+        public Transaction Save(Transaction transaction)
         {
             var model = ToModel(transaction);
             _drive.Transaction.Add(model);
             _drive.SaveChanges();
-            return model.NSU;
+            return Find(model.NSU);
         }
 
         public Transaction Find(Guid NSU)

@@ -13,7 +13,7 @@ namespace DesafioPagCerto.Entities.Transactions
         public bool Anticipation { get; private set; }
         public bool Confirmation { get; private set; }
         public decimal GrossValue { get; }
-        public decimal NetValue { get; }
+        public decimal NetValue { get; private set;}
         public decimal FixedTax { get; }
         public int NumberParcel { get; }
         public string CreditCardSuffix { get; }
@@ -73,6 +73,7 @@ namespace DesafioPagCerto.Entities.Transactions
 
         public void Reproved()
         {
+            NetValue  = GrossValue;
             ReprovedDate = DateTime.Now;
         }
 
