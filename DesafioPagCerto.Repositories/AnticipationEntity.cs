@@ -97,7 +97,12 @@ namespace DesafioPagCerto.Repository
 
         public Anticipation Approved(Anticipation anticipation)
         {
-            Edit(anticipation);
+            var anticipationModel =
+                _drive.Anticipation
+                    .Include("Transactions.Installments")
+                    .First(a => a.Id == anticipation.Id);
+            anticipationModel.Update(anticipation);
+            _drive.SaveChanges();
             return Find(anticipation.Id);
         }
     }
