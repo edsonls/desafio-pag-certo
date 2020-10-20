@@ -13,16 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Adicionando Teste e adequando o codigo">
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Refatorando os testes">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +198,7 @@
       <workItem from="1602979404420" duration="1470000" />
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
-      <workItem from="1603027503046" duration="55883000" />
+      <workItem from="1603027503046" duration="56182000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -459,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603213840228</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Refatorando os testes">
+      <created>1603214464322</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1603214464322</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +481,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Trocando por Validate data annotations" />
     <MESSAGE value="Ajustando Regra de negocio" />
     <MESSAGE value="Cadastrando no Banco com EntityFramework" />
     <MESSAGE value="Ajuste no metodo que salva a transação para que o mesmo retorne o id da transação" />
@@ -506,7 +505,8 @@
     <MESSAGE value="Refatoração" />
     <MESSAGE value="Criando Exception personalizada" />
     <MESSAGE value="Adicionando Teste e adequando o codigo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando Teste e adequando o codigo" />
+    <MESSAGE value="Refatorando os testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatorando os testes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2342" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602975174953">
@@ -646,10 +646,10 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2190" y="60" key="SettingsEditor/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603198829288" />
-    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog" timestamp="1603212053894">
+    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog" timestamp="1603214744375">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603212053894" />
+    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603214744375" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602980719137" />
     <state x="2401" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603213844224">
       <screen x="1920" y="0" width="2048" height="824" />

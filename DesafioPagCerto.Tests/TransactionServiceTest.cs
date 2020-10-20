@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using DesafioPagCerto.Repository.Tests;
 using DesafioPagCerto.Services;
 using DesafioPagCerto.Services.Interfaces;
@@ -78,6 +79,22 @@ namespace DesafioPagCerto.Tests
         {
             var tra = _transactionService.CreateTransaction("5999999999999999", 2, 1000);
             Assert.False(tra.Confirmation);
+        }
+
+        [Test]
+        public void TestCreateInstallmentsOK()
+        {
+            var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
+            Assert.True(tra.Confirmation);
+            Assert.AreEqual(2, tra.Installments.Count());
+        }
+
+        [Test]
+        public void TestCreateInstallmentsNotOK()
+        {
+            var tra = _transactionService.CreateTransaction("599999999999999", 2, 1000);
+            Assert.False(tra.Confirmation);
+            Assert.AreEqual(null, tra.Installments);
         }
     }
 }
