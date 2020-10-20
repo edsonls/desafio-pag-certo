@@ -15,7 +15,12 @@
   <component name="ChangeListManager">
     <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Criando Regra para Aprovar a analise">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Installment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Installment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/AnticipationEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/AnticipationEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Anticipation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Anticipation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,16 +108,16 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/AnticipationTransactionRequest.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/AnticipationFinishRequest.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Installment.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/IAnticipationService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/IAnticipationRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Anticipation.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Transaction.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Installment.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Installment.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Anticipation.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/AnticipationEntity.cs" />
       </list>
     </option>
@@ -183,7 +188,7 @@
       <workItem from="1602979404420" duration="1470000" />
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
-      <workItem from="1603027503046" duration="41323000" />
+      <workItem from="1603027503046" duration="42885000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -360,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603198716737</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Criando Regra para Aprovar a analise">
+      <created>1603199736590</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1603199736590</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,105 +441,105 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2128" y="68" key="DiffContextDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602974371621" />
-    <state width="1476" height="286" key="GridCell.Tab.0.bottom" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.0.bottom" timestamp="1603201042359">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042359" />
     <state width="1493" height="287" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.0.center" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.0.center" timestamp="1603201042359">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042359" />
     <state width="1493" height="287" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.0.left" timestamp="1603199726183">
+    <state width="1476" height="286" key="GridCell.Tab.0.left" timestamp="1603201042359">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726183" />
+    <state width="1476" height="286" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042359" />
     <state width="1493" height="287" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.0.right" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.0.right" timestamp="1603201042359">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042359" />
     <state width="1493" height="287" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.1.bottom" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.1.bottom" timestamp="1603201081678">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201081678" />
     <state width="1493" height="287" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.1.center" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.1.center" timestamp="1603201081678">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201081678" />
     <state width="1493" height="287" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.1.left" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.1.left" timestamp="1603201081678">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201081678" />
     <state width="1493" height="287" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.1.right" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.1.right" timestamp="1603201081678">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201081678" />
     <state width="1493" height="287" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.2.bottom" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.2.bottom" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.2.center" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.2.center" timestamp="1603201042150">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042150" />
     <state width="1493" height="287" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.2.left" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.2.left" timestamp="1603201042150">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042150" />
     <state width="1493" height="287" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.2.right" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.2.right" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.3.bottom" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.3.bottom" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603074698860" />
-    <state width="1476" height="286" key="GridCell.Tab.3.center" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.3.center" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603074698860" />
-    <state width="1476" height="286" key="GridCell.Tab.3.left" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.3.left" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603074698857" />
-    <state width="1476" height="286" key="GridCell.Tab.3.right" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.3.right" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603074698860" />
-    <state width="1476" height="286" key="GridCell.Tab.4.bottom" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.4.bottom" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603074698860" />
-    <state width="1476" height="286" key="GridCell.Tab.4.center" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.4.center" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603074698860" />
-    <state width="1476" height="286" key="GridCell.Tab.4.left" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.4.left" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603074698860" />
-    <state width="1476" height="286" key="GridCell.Tab.4.right" timestamp="1603199726184">
+    <state width="1476" height="286" key="GridCell.Tab.4.right" timestamp="1603201042151">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="1476" height="286" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603199726184" />
+    <state width="1476" height="286" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603201042151" />
     <state width="1493" height="287" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603074698860" />
     <state x="2537" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1603045301896">
       <screen x="1920" y="0" width="2048" height="824" />
@@ -581,97 +593,95 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs</url>
-          <line>62</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Services\TransactionService.cs" initialLine="62">
+          <url>file://$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Transaction.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Repositories\EntityFramework\Models\Transaction.cs" initialLine="47">
             <startOffsets>
-              <option value="2173" />
+              <option value="1898" />
             </startOffsets>
             <endOffsets>
-              <option value="2202" />
+              <option value="1925" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs</url>
-          <line>55</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Services\AnticipationService.cs" initialLine="55">
+          <url>file://$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Transaction.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Repositories\EntityFramework\Models\Transaction.cs" initialLine="48">
             <startOffsets>
-              <option value="1799" />
+              <option value="1954" />
             </startOffsets>
             <endOffsets>
-              <option value="1851" />
+              <option value="1976" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs</url>
-          <line>56</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Services\AnticipationService.cs" initialLine="56">
-            <startOffsets>
-              <option value="1871" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1935" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\Controllers\Anticipations\AnticipationController.cs" initialLine="37">
+            <startOffsets>
+              <option value="1352" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1402" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Services\AnticipationService.cs" initialLine="38">
+            <startOffsets>
+              <option value="1221" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1261" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs</url>
           <line>44</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Core\Controllers\Anticipations\AnticipationController.cs" initialLine="44">
+          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Services\AnticipationService.cs" initialLine="44">
             <startOffsets>
-              <option value="1615" />
-              <option value="1699" />
+              <option value="1480" />
             </startOffsets>
             <endOffsets>
-              <option value="1706" />
-              <option value="1704" />
+              <option value="1501" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="40" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs</url>
+          <line>45</line>
+          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Services\AnticipationService.cs" initialLine="45">
+            <startOffsets>
+              <option value="1514" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1550" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/DesafioPagCerto.Repositories/AnticipationEntity.cs</url>
-          <line>103</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Repositories\AnticipationEntity.cs" initialLine="103">
+          <line>56</line>
+          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Repositories\AnticipationEntity.cs" initialLine="56">
             <startOffsets>
-              <option value="3982" />
+              <option value="2014" />
             </startOffsets>
             <endOffsets>
-              <option value="4021" />
+              <option value="2060" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DesafioPagCerto.Repositories/AnticipationEntity.cs</url>
-          <line>99</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Repositories\AnticipationEntity.cs" initialLine="99">
-            <startOffsets>
-              <option value="3794" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3969" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Anticipation.cs</url>
-          <line>41</line>
-          <properties documentPath="C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Repositories\EntityFramework\Models\Anticipation.cs" initialLine="41">
-            <startOffsets>
-              <option value="1762" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1784" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -22,7 +22,7 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
         public decimal AnticipatedAmount { get; set; }
         public ICollection<Transaction> Transactions { get; set; }
 
-        public void Update(Entities.Anticipations.Anticipation anticipation)
+        public void Update(Entities.Anticipations.Anticipation anticipation, bool updateTransactions = true)
         {
             SolicitationDate = anticipation.SolicitationDate;
             AnalysisStartDate = anticipation.AnalysisStartDate;
@@ -32,7 +32,7 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
             StatusAnticipation = anticipation.StatusAnticipation;
             RequestedAmount = anticipation.RequestedAmount;
             AnticipatedAmount = anticipation.AnticipatedAmount;
-            if (Transactions.Any())
+            if (updateTransactions && Transactions.Any())
             {
                 foreach (var transaction in anticipation.Transactions)
                 {

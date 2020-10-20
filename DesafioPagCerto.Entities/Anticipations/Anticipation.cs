@@ -15,8 +15,8 @@ namespace DesafioPagCerto.Entities.Anticipations
         public ResultAnalysisEnum? ResultAnalysis { get; private set; }
         public StatusAnticipations StatusAnticipation { get; private set; }
         public decimal RequestedAmount { get; }
-        public decimal AnticipatedAmount { get; private set;}
-        public IEnumerable<Transaction> Transactions { get; private set;}
+        public decimal AnticipatedAmount { get; private set; }
+        public IEnumerable<Transaction> Transactions { get; private set; }
 
         public Anticipation(DateTime solicitationDate, decimal requestedAmount,
             IEnumerable<Transaction> transactions,
@@ -61,13 +61,19 @@ namespace DesafioPagCerto.Entities.Anticipations
             var transactions = Transactions
                 .Where(t => transactionsApproved.Contains(t.NSU))
                 .ToList();
-            AnticipatedAmount = transactions.Sum(t=> t.AnticipatedAmount(taxFixed));
             if (transactions.Count == Transactions.Count())
+            {
+                AnticipatedAmount = transactions.Sum(t => t.AnticipatedAmount(taxFixed));
                 ResultAnalysis = ResultAnalysisEnum.Approved;
+            }
             else if (Transactions.Count() > transactions.Count)
+            {
+                AnticipatedAmount = transactions.Sum(t => t.AnticipatedAmount(taxFixed));
                 ResultAnalysis = ResultAnalysisEnum.PartiallyApproved;
+            }
             else
                 ResultAnalysis = ResultAnalysisEnum.Reproved;
+            
             Transactions = transactions;
             return transactions;
         }

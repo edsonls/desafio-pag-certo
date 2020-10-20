@@ -65,11 +65,6 @@ namespace DesafioPagCerto.Entities.Transactions
             CreditCardSuffix = creditCardSuffix;
         }
 
-        public Transaction()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Approved()
         {
             ApprovedDate = DateTime.Now;
@@ -89,12 +84,7 @@ namespace DesafioPagCerto.Entities.Transactions
         public decimal AnticipatedAmount(decimal taxFixed)
         {
             Anticipation = true;
-           return Installments.Sum(i => i.AnticipatedAmount(taxFixed));
-        }
-
-        public TResult Update<TResult>(Transaction transaction)
-        {
-            throw new NotImplementedException();
+            return Installments.Sum(i => i.AnticipatedAmount(taxFixed));
         }
     }
 }

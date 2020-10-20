@@ -54,7 +54,7 @@ namespace DesafioPagCerto.Repository
         public bool Edit(Anticipation anticipation)
         {
             var anticipationModel = _drive.Anticipation.First(a => a.Id == anticipation.Id);
-            anticipationModel.Update(anticipation);
+            anticipationModel.Update(anticipation, false);
             return _drive.SaveChanges() > 0;
         }
 
