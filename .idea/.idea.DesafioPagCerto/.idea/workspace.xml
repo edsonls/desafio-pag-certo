@@ -14,11 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Criando Exception personalizada">
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/ForbiddenException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,8 +98,6 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Migrations/20201018155922_DesafioPagCertoDB.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Migrations/DriveModelSnapshot.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/TransactionController.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Enum/Class1.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Enum/ResultAnalysisEnum.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipations.cs" />
@@ -129,8 +124,10 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Exception/NotFoundException.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Exception/ForbiddenException.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
       </list>
     </option>
   </component>
@@ -200,7 +197,7 @@
       <workItem from="1602979404420" duration="1470000" />
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
-      <workItem from="1603027503046" duration="51069000" />
+      <workItem from="1603027503046" duration="51493000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -426,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603209110767</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Criando Exception personalizada">
+      <created>1603209583748</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1603209583748</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

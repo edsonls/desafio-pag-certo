@@ -1,5 +1,5 @@
 ﻿using System;
-using DesafioPagCerto.Entities.Transactions;
+using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
 using DesafioPagCerto.Services;
@@ -22,9 +22,16 @@ namespace DesafioPagCerto.Controllers.Transactions
         }
 
         [HttpGet("{nsu}")]
-        public Transaction Find(Guid nsu)
+        public IActionResult Find(Guid nsu)
         {
-            return _transactionService.Find(nsu);
+            try
+            {
+                return Ok(_transactionService.Find(nsu));
+            }
+            catch (NotFoundException n)
+            {
+                return NotFound(n.Message);
+            }
         }
     }
 }
