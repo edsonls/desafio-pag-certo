@@ -12,19 +12,19 @@ namespace DesafioPagCerto.Repository
 {
     public class TransactionEntity : ITransactionRepository
     {
+        private readonly Drive _drive = new Drive();
+
         public Guid Save(Transaction transaction)
         {
-            using var drive = new Drive();
             var model = ToModel(transaction);
-            drive.Transaction.Add(model);
-            drive.SaveChanges();
+            _drive.Transaction.Add(model);
+            _drive.SaveChanges();
             return model.NSU;
         }
 
         public Transaction Find(Guid NSU)
         {
-            using var drive = new Drive();
-            return ToEntity(drive.Transaction
+            return ToEntity(_drive.Transaction
                 .Where(t => t.NSU == NSU)
                 .Include(transaction => transaction.Installments)
                 .FirstOrDefault());
@@ -119,11 +119,15 @@ namespace DesafioPagCerto.Repository
 
         public IEnumerable<Transaction> FindAvailable()
         {
-            using var drive = new Drive();
-            return drive.Transaction
+            return _drive.Transaction
                 .Where(t => !t.StatusAnticipation && t.Confirmation)
                 .Include(transaction => transaction.Installments)
                 .ToList().Select(ToEntity);
+        }
+
+        public bool Exist(Guid nsu)
+        {
+            return _drive.Transaction.Any(t => t.NSU == nsu);
         }
     }
 }

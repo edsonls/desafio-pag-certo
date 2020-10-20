@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using DesafioPagCerto.Repository.EntityFramework.Drive;
 using DesafioPagCerto.Entities.Anticipations;
 using DesafioPagCerto.Enum;
@@ -46,10 +47,11 @@ namespace DesafioPagCerto.Repository
 
         public Anticipation Find(Guid id)
         {
-            return ToEntity(_drive.Anticipation
+            var anticipationModel = _drive.Anticipation
                 .Where(a => a.Id == id)
                 .Include(a => a.Transactions)
-                .First());
+                .FirstOrDefault();
+            return ToEntity(anticipationModel);
         }
 
         public bool Edit(Anticipation anticipation)
@@ -119,6 +121,13 @@ namespace DesafioPagCerto.Repository
                     .Where(a => a.ResultAnalysis == status)
                     .ToList()
                     .Select(ToEntity);
+        }
+
+
+        public bool Exist(Guid id)
+        {
+            return _drive.Anticipation
+                .Any(a => a.Id == id);
         }
     }
 }

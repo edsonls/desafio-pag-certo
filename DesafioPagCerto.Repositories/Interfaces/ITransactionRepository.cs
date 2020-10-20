@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using DesafioPagCerto.Entities;
 using DesafioPagCerto.Entities.Transactions;
 
 namespace DesafioPagCerto.Repository.Interfaces
@@ -10,5 +9,6 @@ namespace DesafioPagCerto.Repository.Interfaces
         public Guid Save(Transaction transaction);
         Transaction Find(Guid NSU);
         IEnumerable<Transaction> FindAvailable();
+        bool Exist(Guid nsu);
     }
 }

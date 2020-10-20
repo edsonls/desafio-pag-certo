@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using DesafioPagCerto.Entities;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Repository.Interfaces;
@@ -58,9 +59,13 @@ namespace DesafioPagCerto.Services
             return installments;
         }
 
-        public Transaction FindTransaction(Guid NSU)
+        public Transaction Find(Guid nsu)
         {
-            return _repository.Find(NSU);
+            if (!_repository.Exist(nsu))
+            {
+                throw new HttpRequestException("Transaction Not Found!");
+            }
+            return _repository.Find(nsu);
         }
 
         private decimal ValueTransaction(decimal valueTransaction)

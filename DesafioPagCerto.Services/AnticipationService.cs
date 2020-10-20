@@ -61,6 +61,11 @@ namespace DesafioPagCerto.Services
 
         private Anticipation Find(Guid id)
         {
+            if (!_repository.Exist(id))
+            {
+                throw new HttpRequestException("Anticipation Not Found!");
+            }
+
             return _repository.Find(id);
         }
 

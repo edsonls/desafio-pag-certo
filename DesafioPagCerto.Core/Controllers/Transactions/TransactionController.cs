@@ -24,7 +24,7 @@ namespace DesafioPagCerto.Controllers.Transactions
         [HttpGet("{nsu}")]
         public Transaction Find(Guid nsu)
         {
-            return _transactionService.FindTransaction(nsu);
+            return _transactionService.Find(nsu);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace DesafioPagCerto.Controllers.Anticipations
         public Guid CreateAnticipation([FromBody] IEnumerable<AnticipationRequest> anticipations)
         {
             var transactions = anticipations.Select(a =>
-                _transactionService.FindTransaction(a.nsu));
+                _transactionService.Find(a.nsu));
             return _anticipationService.CreateAnticipation(transactions);
         }
 

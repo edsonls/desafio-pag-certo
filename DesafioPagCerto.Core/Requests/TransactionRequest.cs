@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using DataAnnotationsExtensions;
 
 namespace DesafioPagCerto.Requests
 {
@@ -9,9 +10,12 @@ namespace DesafioPagCerto.Requests
         // [CreditCard] todo ativar por ultimo
         [RegularExpression(@"(^(?!5999)\w+$)|([^-\s])")]
         public string CardNumber { get; set; }
-        [Required]
+
+        [Required] 
         public int ParcelNumber { get; set; }
+
         [Required]
+        [Min(0.90)]
         public decimal TransactionValue { get; set; }
     }
 }
