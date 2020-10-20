@@ -25,7 +25,7 @@ namespace DesafioPagCerto.Services
         {
             if (AnticipationInOpen())
             {
-                throw new NotFoundException("Já existe uma antecipação em aberto");
+                throw new ForbiddenException("Já existe uma antecipação em aberto");
             }
 
             var enumerable = transactions.ToList();
@@ -40,7 +40,7 @@ namespace DesafioPagCerto.Services
             var anticipation = Find(anticipationId);
             if (anticipation.StatusAnticipation != StatusAnticipations.Pending)
             {
-                throw new HttpRequestException("O status da antecipação precisa ser pendente!");
+                throw new ForbiddenException("O status da antecipação precisa ser pendente!");
             }
 
             anticipation.Start();
@@ -55,6 +55,10 @@ namespace DesafioPagCerto.Services
         public Anticipation Finish(Guid anticipationId, IEnumerable<Guid> transactionsApproved)
         {
             var anticipation = _repository.Find(anticipationId);
+            if (anticipation.StatusAnticipation != StatusAnticipations.InAnalysis)
+            {
+                throw new ForbiddenException("O status da antecipação precisa estar em analise!");
+            }
             return anticipation.Approved(transactionsApproved, TaxFixed).Count == 0
                 ? _repository.Reproved(anticipation)
                 : _repository.Approved(anticipation);

@@ -68,6 +68,7 @@
       <e p="DesafioPagCerto.Exception" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="DesafioPagCerto.Exception.csproj" t="IncludeRecursive" />
+        <e p="ForbiddenException.cs" t="Include" />
         <e p="NotFoundException.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

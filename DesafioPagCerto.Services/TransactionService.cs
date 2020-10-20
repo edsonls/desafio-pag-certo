@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using DesafioPagCerto.Entities.Transactions;
+using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository.Interfaces;
 using DesafioPagCerto.Services.Interfaces;
 
@@ -62,7 +63,7 @@ namespace DesafioPagCerto.Services
         {
             if (!_repository.Exist(nsu))
             {
-                throw new HttpRequestException("Transaction Not Found!");
+                throw new NotFoundException("Transaction Not Found!");
             }
             return _repository.Find(nsu);
         }

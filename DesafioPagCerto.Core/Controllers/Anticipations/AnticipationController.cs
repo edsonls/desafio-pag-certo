@@ -34,6 +34,10 @@ namespace DesafioPagCerto.Controllers.Anticipations
                     _transactionService.Find(a.nsu));
                 return Ok(_anticipationService.CreateAnticipation(transactions));
             }
+            catch (ForbiddenException n)
+            {
+                return Forbid(n.Message);
+            }
             catch (NotFoundException n)
             {
                 return NotFound(n.Message);
@@ -61,6 +65,10 @@ namespace DesafioPagCerto.Controllers.Anticipations
             {
                 return Ok(_anticipationService.Start(anticipationId));
             }
+            catch (ForbiddenException n)
+            {
+                return Forbid(n.Message);
+            }
             catch (NotFoundException n)
             {
                 return NotFound(n.Message);
@@ -74,6 +82,10 @@ namespace DesafioPagCerto.Controllers.Anticipations
             try
             {
                 return Ok(_anticipationService.Finish(anticipationId, transactionsApproved.Select(a => a.nsu)));
+            }
+            catch (ForbiddenException n)
+            {
+                return Forbid(n.Message);
             }
             catch (NotFoundException n)
             {
