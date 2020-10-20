@@ -68,5 +68,10 @@ namespace DesafioPagCerto.Services
         {
             return _repository.AnticipationInOpen();
         }
+
+        public IEnumerable<Anticipation> ListAll(ResultAnalysisEnum? status)
+        {
+            return _repository.ListAll(status);
+        }
     }
 }

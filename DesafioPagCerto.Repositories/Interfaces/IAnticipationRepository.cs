@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using DesafioPagCerto.Entities.Anticipations;
+using DesafioPagCerto.Enum;
 
 namespace DesafioPagCerto.Repository.Interfaces
 {
@@ -12,5 +14,6 @@ namespace DesafioPagCerto.Repository.Interfaces
         bool Edit(Anticipation anticipation);
         Anticipation Reproved(Anticipation anticipation);
         Anticipation Approved(Anticipation anticipation);
+        IEnumerable<Anticipation> ListAll(ResultAnalysisEnum? status);
     }
 }

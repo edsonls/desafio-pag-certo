@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DesafioPagCerto.Entities.Anticipations;
 using DesafioPagCerto.Entities.Transactions;
+using DesafioPagCerto.Enum;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
 using DesafioPagCerto.Services;
@@ -32,6 +33,13 @@ namespace DesafioPagCerto.Controllers.Anticipations
             return _anticipationService.CreateAnticipation(transactions);
         }
 
+        [HttpGet]
+        [HttpGet("{status}")]
+        public IEnumerable<Anticipation> List(ResultAnalysisEnum? status = null)
+        {
+            return _anticipationService.ListAll(status);
+        }
+
         [HttpPut("start/{anticipationId}")]
         public Anticipation Start(Guid anticipationId)
         {
@@ -42,7 +50,7 @@ namespace DesafioPagCerto.Controllers.Anticipations
         public Anticipation Finish(Guid anticipationId,
             [FromBody] IEnumerable<AnticipationRequest> transactionsApproved)
         {
-            return _anticipationService.Finish(anticipationId, transactionsApproved.Select(a =>a.nsu));
+            return _anticipationService.Finish(anticipationId, transactionsApproved.Select(a => a.nsu));
         }
     }
 }

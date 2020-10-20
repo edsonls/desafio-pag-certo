@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using DesafioPagCerto.Repository.EntityFramework.Drive;
 using DesafioPagCerto.Entities.Anticipations;
@@ -104,6 +105,20 @@ namespace DesafioPagCerto.Repository
             anticipationModel.Update(anticipation);
             _drive.SaveChanges();
             return Find(anticipation.Id);
+        }
+
+        public IEnumerable<Anticipation> ListAll(ResultAnalysisEnum? status)
+        {
+            return status == null
+                ? _drive.Anticipation
+                    .Include("Transactions")
+                    .ToList()
+                    .Select(ToEntity)
+                : _drive.Anticipation
+                    .Include("Transactions")
+                    .Where(a => a.ResultAnalysis == status)
+                    .ToList()
+                    .Select(ToEntity);
         }
     }
 }
