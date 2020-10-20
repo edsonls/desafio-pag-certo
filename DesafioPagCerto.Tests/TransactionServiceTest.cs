@@ -96,5 +96,34 @@ namespace DesafioPagCerto.Tests
             Assert.False(tra.Confirmation);
             Assert.AreEqual(null, tra.Installments);
         }
+        [Test]
+        public void TestCreateInstallmentsExpectedDateOK()
+        {
+            var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
+            Assert.True(tra.Confirmation);
+            Assert.AreEqual(DateTime.Now.AddMonths(1).Date, tra.Installments.ToArray()[0].ExpectedDate.Date);
+            Assert.AreEqual(DateTime.Now.AddMonths(2).Date, tra.Installments.ToArray()[1].ExpectedDate.Date);
+        }
+        [Test]
+        public void TestCreateTransactionNetValueOK()
+        {
+            var tra = _transactionService.CreateTransaction("5909999999999999", 2, 100);
+            Assert.True(tra.Confirmation);
+            Assert.AreEqual(99.10, tra.NetValue);
+        }
+        [Test]
+        public void TestCreateTransactionNetValueNotOK()
+        {
+            var tra = _transactionService.CreateTransaction("59099999999999999", 2, 100);
+            Assert.False(tra.Confirmation);
+            Assert.AreEqual(100, tra.NetValue);
+        }
+        [Test]
+        public void TestCreateInstallmentsNetValueOK()
+        {
+            var tra = _transactionService.CreateTransaction("5909999999999999", 2, 100);
+            Assert.True(tra.Confirmation);
+            Assert.AreEqual(99.10, tra.Installments.Sum(i => i.NetValue));
+        }
     }
 }
