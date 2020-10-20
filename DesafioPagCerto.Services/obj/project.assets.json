@@ -1801,6 +1801,16 @@
           "bin/placeholder/DesafioPagCerto.Enum.dll": {}
         }
       },
+      "DesafioPagCerto.Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DesafioPagCerto.Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DesafioPagCerto.Exception.dll": {}
+        }
+      },
       "DesafioPagCerto.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6719,6 +6729,11 @@
       "path": "../DesafioPagCerto.Enum/DesafioPagCerto.Enum.csproj",
       "msbuildProject": "../DesafioPagCerto.Enum/DesafioPagCerto.Enum.csproj"
     },
+    "DesafioPagCerto.Exception/1.0.0": {
+      "type": "project",
+      "path": "../DesafioPagCerto.Exception/DesafioPagCerto.Exception.csproj",
+      "msbuildProject": "../DesafioPagCerto.Exception/DesafioPagCerto.Exception.csproj"
+    },
     "DesafioPagCerto.Repositories/1.0.0": {
       "type": "project",
       "path": "../DesafioPagCerto.Repositories/DesafioPagCerto.Repositories.csproj",
@@ -6728,6 +6743,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "DesafioPagCerto.Entities >= 1.0.0",
+      "DesafioPagCerto.Exception >= 1.0.0",
       "DesafioPagCerto.Repositories >= 1.0.0"
     ]
   },
@@ -6763,6 +6779,9 @@
           "projectReferences": {
             "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj": {
               "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Entities\\DesafioPagCerto.Entities.csproj"
+            },
+            "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Exception\\DesafioPagCerto.Exception.csproj": {
+              "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Exception\\DesafioPagCerto.Exception.csproj"
             },
             "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Repositories\\DesafioPagCerto.Repositories.csproj": {
               "projectPath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Repositories\\DesafioPagCerto.Repositories.csproj"

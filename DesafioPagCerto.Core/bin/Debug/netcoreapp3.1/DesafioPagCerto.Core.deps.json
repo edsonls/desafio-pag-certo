@@ -26,6 +26,7 @@
         "dependencies": {
           "DataAnnotationsExtensions": "5.0.1.27",
           "DesafioPagCerto.Entities": "1.0.0",
+          "DesafioPagCerto.Exception": "1.0.0",
           "DesafioPagCerto.Services": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -1542,6 +1543,14 @@
           "DesafioPagCerto.Enum.dll": {}
         }
       },
+      "DesafioPagCerto.Exception/1.0.0": {
+        "runtime": {
+          "DesafioPagCerto.Exception.dll": {}
+        },
+        "compile": {
+          "DesafioPagCerto.Exception.dll": {}
+        }
+      },
       "DesafioPagCerto.Repositories/1.0.0": {
         "dependencies": {
           "DesafioPagCerto.Entities": "1.0.0",
@@ -1559,6 +1568,7 @@
       "DesafioPagCerto.Services/1.0.0": {
         "dependencies": {
           "DesafioPagCerto.Entities": "1.0.0",
+          "DesafioPagCerto.Exception": "1.0.0",
           "DesafioPagCerto.Repositories": "1.0.0"
         },
         "runtime": {
@@ -3919,6 +3929,11 @@
       "sha512": ""
     },
     "DesafioPagCerto.Enum/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DesafioPagCerto.Exception/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

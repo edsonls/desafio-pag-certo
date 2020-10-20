@@ -7,6 +7,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DesafioPagCerto.Entities\DesafioPagCerto.Entities.csproj" />
+      <ProjectReference Include="..\DesafioPagCerto.Exception\DesafioPagCerto.Exception.csproj" />
       <ProjectReference Include="..\DesafioPagCerto.Services\DesafioPagCerto.Services.csproj" />
     </ItemGroup>
 

@@ -1,0 +1,9 @@
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\bin\Debug\netcoreapp3.1\DesafioPagCerto.Exception.deps.json
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\bin\Debug\netcoreapp3.1\DesafioPagCerto.Exception.dll
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\bin\Debug\netcoreapp3.1\DesafioPagCerto.Exception.pdb
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\obj\Debug\netcoreapp3.1\DesafioPagCerto.Exception.csprojAssemblyReference.cache
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\obj\Debug\netcoreapp3.1\DesafioPagCerto.Exception.AssemblyInfoInputs.cache
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\obj\Debug\netcoreapp3.1\DesafioPagCerto.Exception.AssemblyInfo.cs
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\obj\Debug\netcoreapp3.1\DesafioPagCerto.Exception.csproj.CoreCompileInputs.cache
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\obj\Debug\netcoreapp3.1\DesafioPagCerto.Exception.dll
+C:\Users\edson\Documents\Projetos\C#\DesafioPagCerto\DesafioPagCerto\DesafioPagCerto.Exception\obj\Debug\netcoreapp3.1\DesafioPagCerto.Exception.pdb

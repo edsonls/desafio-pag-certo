@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Services", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Enum", "DesafioPagCerto.Enum\DesafioPagCerto.Enum.csproj", "{F8A1C745-05E1-4A34-84F8-33C2822BAF9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioPagCerto.Exception", "DesafioPagCerto.Exception\DesafioPagCerto.Exception.csproj", "{D1FB57A6-94E4-400D-9DFF-71F6DEE84A8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{F8A1C745-05E1-4A34-84F8-33C2822BAF9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8A1C745-05E1-4A34-84F8-33C2822BAF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8A1C745-05E1-4A34-84F8-33C2822BAF9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1FB57A6-94E4-400D-9DFF-71F6DEE84A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FB57A6-94E4-400D-9DFF-71F6DEE84A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FB57A6-94E4-400D-9DFF-71F6DEE84A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FB57A6-94E4-400D-9DFF-71F6DEE84A8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

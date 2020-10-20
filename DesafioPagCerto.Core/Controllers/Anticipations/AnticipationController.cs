@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using DesafioPagCerto.Entities.Anticipations;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Enum;
+using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
 using DesafioPagCerto.Services;
@@ -26,31 +26,59 @@ namespace DesafioPagCerto.Controllers.Anticipations
         }
 
         [HttpPost]
-        public Guid CreateAnticipation([FromBody] IEnumerable<AnticipationRequest> anticipations)
+        public IActionResult CreateAnticipation([FromBody] IEnumerable<AnticipationRequest> anticipations)
         {
-            var transactions = anticipations.Select(a =>
-                _transactionService.Find(a.nsu));
-            return _anticipationService.CreateAnticipation(transactions);
+            try
+            {
+                var transactions = anticipations.Select(a =>
+                    _transactionService.Find(a.nsu));
+                return Ok(_anticipationService.CreateAnticipation(transactions));
+            }
+            catch (NotFoundException n)
+            {
+                return NotFound(n.Message);
+            }
         }
 
         [HttpGet]
         [HttpGet("{status}")]
-        public IEnumerable<Anticipation> List(StatusAnticipations? status = null)
+        public IActionResult List(StatusAnticipations? status = null)
         {
-            return _anticipationService.ListAll(status);
+            try
+            {
+                return Ok(_anticipationService.ListAll(status));
+            }
+            catch (NotFoundException n)
+            {
+                return NotFound(n.Message);
+            }
         }
 
         [HttpPut("start/{anticipationId}")]
-        public Anticipation Start(Guid anticipationId)
+        public IActionResult Start(Guid anticipationId)
         {
-            return _anticipationService.Start(anticipationId);
+            try
+            {
+                return Ok(_anticipationService.Start(anticipationId));
+            }
+            catch (NotFoundException n)
+            {
+                return NotFound(n.Message);
+            }
         }
 
         [HttpPut("finish/{anticipationId}")]
-        public Anticipation Finish(Guid anticipationId,
+        public IActionResult Finish(Guid anticipationId,
             [FromBody] IEnumerable<AnticipationRequest> transactionsApproved)
         {
-            return _anticipationService.Finish(anticipationId, transactionsApproved.Select(a => a.nsu));
+            try
+            {
+                return Ok(_anticipationService.Finish(anticipationId, transactionsApproved.Select(a => a.nsu)));
+            }
+            catch (NotFoundException n)
+            {
+                return NotFound(n.Message);
+            }
         }
     }
 }

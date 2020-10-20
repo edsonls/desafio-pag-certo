@@ -5,6 +5,7 @@ using System.Net.Http;
 using DesafioPagCerto.Entities.Anticipations;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Enum;
+using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository.Interfaces;
 using DesafioPagCerto.Services.Interfaces;
 
@@ -24,7 +25,7 @@ namespace DesafioPagCerto.Services
         {
             if (AnticipationInOpen())
             {
-                throw new Exception("Já existe uma antecipação em aberto");
+                throw new NotFoundException("Já existe uma antecipação em aberto");
             }
 
             var enumerable = transactions.ToList();
@@ -63,7 +64,7 @@ namespace DesafioPagCerto.Services
         {
             if (!_repository.Exist(id))
             {
-                throw new HttpRequestException("Anticipation Not Found!");
+                throw new NotFoundException("Anticipation Not Found!");
             }
 
             return _repository.Find(id);
