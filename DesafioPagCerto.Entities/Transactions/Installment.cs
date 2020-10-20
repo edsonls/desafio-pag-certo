@@ -8,7 +8,7 @@ namespace DesafioPagCerto.Entities.Transactions
         public int NumberParcel { get; }
         public decimal GrossValue { get; }
         public decimal NetValue { get; }
-        public decimal? AnticipationValue { get; }
+        public decimal? AnticipationValue { get; private set; }
         public DateTime ExpectedDate { get; }
         public DateTime? TransferDate { get; }
         public Guid TransactionNSU { get; }
@@ -32,6 +32,11 @@ namespace DesafioPagCerto.Entities.Transactions
             GrossValue = grossValue;
             NetValue = netValue;
             ExpectedDate = expectedDate;
+        }
+
+        public decimal AnticipatedAmount(decimal taxFixed)
+        {
+            return (decimal) (AnticipationValue = NetValue - NetValue / 100 * taxFixed);
         }
     }
 }

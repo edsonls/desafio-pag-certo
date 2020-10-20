@@ -9,5 +9,7 @@ namespace DesafioPagCerto.Services.Interfaces
     {
         Guid CreateAnticipation(IEnumerable<Transaction> transactions);
         Anticipation Start(Guid anticipationId);
+        Anticipation Finish(Guid anticipationId, IEnumerable<Guid> transactionsApproved);
+        bool AnticipationInOpen();
     }
 }

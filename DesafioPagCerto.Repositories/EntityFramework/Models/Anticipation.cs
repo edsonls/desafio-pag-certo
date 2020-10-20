@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 using DesafioPagCerto.Enum;
 
 namespace DesafioPagCerto.Repository.EntityFramework.Models
@@ -20,5 +21,28 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
         public decimal RequestedAmount { get; set; }
         public decimal AnticipatedAmount { get; set; }
         public ICollection<Transaction> Transactions { get; set; }
+
+        public void Update(Entities.Anticipations.Anticipation anticipation)
+        {
+            SolicitationDate = anticipation.SolicitationDate;
+            AnalysisStartDate = anticipation.AnalysisStartDate;
+            AnalysisEndDate = anticipation.AnalysisEndDate;
+            ResultAnalysis = anticipation.ResultAnalysis;
+            StatusAnticipation = anticipation.StatusAnticipation;
+            StatusAnticipation = anticipation.StatusAnticipation;
+            RequestedAmount = anticipation.RequestedAmount;
+            AnticipatedAmount = anticipation.AnticipatedAmount;
+            if (Transactions.Any())
+            {
+                foreach (var transaction in anticipation.Transactions)
+                {
+                    foreach (var t in Transactions)
+                    {
+                        if (t.NSU == transaction.NSU)
+                            t.Update(transaction);
+                    }
+                }
+            }
+        }
     }
 }

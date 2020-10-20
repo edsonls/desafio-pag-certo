@@ -53,9 +53,8 @@ namespace DesafioPagCerto.Repository
 
         public bool Edit(Anticipation anticipation)
         {
-            var anticipationModel = ToModel(anticipation);
-            _drive.Anticipation.First(a => a.Id == anticipation.Id);
-            _drive.Anticipation.Update(anticipationModel);
+            var anticipationModel = _drive.Anticipation.First(a => a.Id == anticipation.Id);
+            anticipationModel.Update(anticipation);
             return _drive.SaveChanges() > 0;
         }
 
@@ -88,6 +87,18 @@ namespace DesafioPagCerto.Repository
                 id: anticipation.Id,
                 transactions: anticipation.Transactions.Select(at => repositoryTransaction.Find(at.NSU))
             );
+        }
+
+        public Anticipation Reproved(Anticipation anticipation)
+        {
+            Edit(anticipation);
+            return Find(anticipation.Id);
+        }
+
+        public Anticipation Approved(Anticipation anticipation)
+        {
+            Edit(anticipation);
+            return Find(anticipation.Id);
         }
     }
 }

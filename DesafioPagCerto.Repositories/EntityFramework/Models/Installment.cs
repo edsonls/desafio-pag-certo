@@ -9,6 +9,7 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public Guid Id { get; set; }
+
         public int NumberParcel { get; set; }
         public decimal GrossValue { get; set; }
         public decimal NetValue { get; set; }
@@ -16,5 +17,15 @@ namespace DesafioPagCerto.Repository.EntityFramework.Models
         public DateTime ExpectedDate { get; set; }
         public DateTime? TransferDate { get; set; }
         public Transaction Transaction { get; set; }
+
+        public void Update(Entities.Transactions.Installment installment)
+        {
+            NumberParcel = installment.NumberParcel;
+            GrossValue = installment.GrossValue;
+            NetValue = installment.NetValue;
+            AnticipationValue = installment.AnticipationValue;
+            ExpectedDate = installment.ExpectedDate;
+            TransferDate = installment.TransferDate;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace DesafioPagCerto.Entities.Transactions
 {
@@ -9,7 +10,7 @@ namespace DesafioPagCerto.Entities.Transactions
         public DateTime TransactionDate { get; }
         public DateTime? ApprovedDate { get; private set; }
         public DateTime? ReprovedDate { get; private set; }
-        public bool Anticipation { get; }
+        public bool Anticipation { get; private set; }
         public bool Confirmation { get; private set; }
         public decimal GrossValue { get; }
         public decimal NetValue { get; }
@@ -83,6 +84,17 @@ namespace DesafioPagCerto.Entities.Transactions
         public void AddInstallments(IEnumerable<Installment> installments)
         {
             Installments ??= installments;
+        }
+
+        public decimal AnticipatedAmount(decimal taxFixed)
+        {
+            Anticipation = true;
+           return Installments.Sum(i => i.AnticipatedAmount(taxFixed));
+        }
+
+        public TResult Update<TResult>(Transaction transaction)
+        {
+            throw new NotImplementedException();
         }
     }
 }

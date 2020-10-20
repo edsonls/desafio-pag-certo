@@ -12,7 +12,7 @@ namespace DesafioPagCerto.Services
 {
     public class AnticipationService : IAnticipationService
     {
-        private const decimal TaxFixed = (decimal) 0.90;
+        private const decimal TaxFixed = (decimal) 3.8;
         private readonly IAnticipationRepository _repository;
 
         public AnticipationService(IAnticipationRepository repository)
@@ -49,6 +49,14 @@ namespace DesafioPagCerto.Services
             }
 
             return anticipation;
+        }
+
+        public Anticipation Finish(Guid anticipationId, IEnumerable<Guid> transactionsApproved)
+        {
+            var anticipation = _repository.Find(anticipationId);
+            return anticipation.Approved(transactionsApproved, TaxFixed).Count == 0
+                ? _repository.Reproved(anticipation)
+                : _repository.Approved(anticipation);
         }
 
         private Anticipation Find(Guid id)
