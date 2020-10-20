@@ -14,7 +14,8 @@ namespace DesafioPagCerto.Repository.Tests
 
         public Transaction Find(Guid NSU)
         {
-            throw new NotImplementedException();
+           return new Transaction(DateTime.Now, 100,  new decimal(99.10), new decimal(0.90),
+            1, "1234");
         }
 
         public IEnumerable<Transaction> FindAvailable()
@@ -24,7 +25,7 @@ namespace DesafioPagCerto.Repository.Tests
 
         public bool Exist(Guid nsu)
         {
-            throw new NotImplementedException();
+            return Guid.Empty.Equals(nsu);
         }
     }
 }

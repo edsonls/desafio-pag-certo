@@ -96,6 +96,7 @@ namespace DesafioPagCerto.Tests
             Assert.False(tra.Confirmation);
             Assert.AreEqual(null, tra.Installments);
         }
+
         [Test]
         public void TestCreateInstallmentsExpectedDateOK()
         {
@@ -104,6 +105,7 @@ namespace DesafioPagCerto.Tests
             Assert.AreEqual(DateTime.Now.AddMonths(1).Date, tra.Installments.ToArray()[0].ExpectedDate.Date);
             Assert.AreEqual(DateTime.Now.AddMonths(2).Date, tra.Installments.ToArray()[1].ExpectedDate.Date);
         }
+
         [Test]
         public void TestCreateTransactionNetValueOK()
         {
@@ -111,6 +113,7 @@ namespace DesafioPagCerto.Tests
             Assert.True(tra.Confirmation);
             Assert.AreEqual(99.10, tra.NetValue);
         }
+
         [Test]
         public void TestCreateTransactionNetValueNotOK()
         {
@@ -118,12 +121,20 @@ namespace DesafioPagCerto.Tests
             Assert.False(tra.Confirmation);
             Assert.AreEqual(100, tra.NetValue);
         }
+
         [Test]
         public void TestCreateInstallmentsNetValueOK()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 100);
             Assert.True(tra.Confirmation);
             Assert.AreEqual(99.10, tra.Installments.Sum(i => i.NetValue));
+        }
+
+        [Test]
+        public void TestFindTransactionOK()
+        {
+            var tra = _transactionService.Find(Guid.Empty);
+            Assert.AreNotEqual(null,tra);
         }
     }
 }
