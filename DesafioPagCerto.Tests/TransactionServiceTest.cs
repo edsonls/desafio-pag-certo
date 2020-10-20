@@ -17,7 +17,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestTransactionTaxOK()
+        public void TestTransactionTaxOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
             Assert.True(tra.Confirmation);
@@ -25,7 +25,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestTransactionTaxNotOK()
+        public void TestTransactionTaxNotOk()
         {
             var tra = _transactionService.CreateTransaction("5999999999999999", 2, 1000);
             Assert.False(tra.Confirmation);
@@ -33,56 +33,56 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestCreateTransactionNumberCardOK()
+        public void TestCreateTransactionNumberCardOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
             Assert.True(tra.Confirmation);
         }
 
         [Test]
-        public void TestCreateTransactionNumberCardNotOK()
+        public void TestCreateTransactionNumberCardNotOk()
         {
             var tra = _transactionService.CreateTransaction("5999999999999999", 2, 1000);
             Assert.False(tra.Confirmation);
         }
 
         [Test]
-        public void TestCreateTransactionNumberCardLenghtOK()
+        public void TestCreateTransactionNumberCardLenghtOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
             Assert.True(tra.Confirmation);
         }
 
         [Test]
-        public void TestCreateTransactionNumberCardLenghtMinorNotOK()
+        public void TestCreateTransactionNumberCardLenghtMinorNotOk()
         {
             var tra = _transactionService.CreateTransaction("59099999999999", 2, 1000);
             Assert.False(tra.Confirmation);
         }
 
         [Test]
-        public void TestCreateTransactionNumberCardLenghtLargerNotOK()
+        public void TestCreateTransactionNumberCardLenghtLargerNotOk()
         {
             var tra = _transactionService.CreateTransaction("59099999999997999", 2, 1000);
             Assert.False(tra.Confirmation);
         }
 
         [Test]
-        public void TestCreateTransactionConfirmationOK()
+        public void TestCreateTransactionConfirmationOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
             Assert.True(tra.Confirmation);
         }
 
         [Test]
-        public void TestCreateTransactionConfirmationNotOK()
+        public void TestCreateTransactionConfirmationNotOk()
         {
             var tra = _transactionService.CreateTransaction("5999999999999999", 2, 1000);
             Assert.False(tra.Confirmation);
         }
 
         [Test]
-        public void TestCreateInstallmentsOK()
+        public void TestCreateInstallmentsOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
             Assert.True(tra.Confirmation);
@@ -90,7 +90,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestCreateInstallmentsNotOK()
+        public void TestCreateInstallmentsNotOk()
         {
             var tra = _transactionService.CreateTransaction("599999999999999", 2, 1000);
             Assert.False(tra.Confirmation);
@@ -98,7 +98,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestCreateInstallmentsExpectedDateOK()
+        public void TestCreateInstallmentsExpectedDateOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 1000);
             Assert.True(tra.Confirmation);
@@ -107,7 +107,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestCreateTransactionNetValueOK()
+        public void TestCreateTransactionNetValueOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 100);
             Assert.True(tra.Confirmation);
@@ -115,7 +115,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestCreateTransactionNetValueNotOK()
+        public void TestCreateTransactionNetValueNotOk()
         {
             var tra = _transactionService.CreateTransaction("59099999999999999", 2, 100);
             Assert.False(tra.Confirmation);
@@ -123,7 +123,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestCreateInstallmentsNetValueOK()
+        public void TestCreateInstallmentsNetValueOk()
         {
             var tra = _transactionService.CreateTransaction("5909999999999999", 2, 100);
             Assert.True(tra.Confirmation);
@@ -131,7 +131,7 @@ namespace DesafioPagCerto.Tests
         }
 
         [Test]
-        public void TestFindTransactionOK()
+        public void TestFindTransactionOk()
         {
             var tra = _transactionService.Find(Guid.Empty);
             Assert.AreNotEqual(null,tra);
