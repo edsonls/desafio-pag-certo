@@ -13,22 +13,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Estrutura de Teste para Antecipação">
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Ajustes na estrutura para atender os testes">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationMock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
@@ -92,7 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/TransactionRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionSerivice.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Parcel.cs" />
@@ -118,7 +115,6 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Transaction.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Installment.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Installment.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Models/Anticipation.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/IAnticipationRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/IAnticipationService.cs" />
@@ -128,21 +124,23 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Startup.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Exception/NotFoundException.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Exception/ForbiddenException.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionEntity.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationMock.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipation.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" />
       </list>
     </option>
   </component>
@@ -213,7 +211,7 @@
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
       <workItem from="1603027503046" duration="56246000" />
-      <workItem from="1603233033925" duration="6661000" />
+      <workItem from="1603233033925" duration="10885000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -516,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603235008625</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Ajustes na estrutura para atender os testes">
+      <created>1603241555575</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1603241555575</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +543,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Ajuste no metodo que salva a transação para que o mesmo retorne o id da transação" />
     <MESSAGE value="Ajuste para ao salvar retornar o NSU da transação" />
     <MESSAGE value="Ajustando para receber o padrão de UUID ao inves de Id convencional para que possa haver multiplas data base" />
     <MESSAGE value="EndPoint para pegar transação apartir do NSU" />
@@ -563,7 +567,8 @@
     <MESSAGE value="Testes de Transação ok" />
     <MESSAGE value="Refatoração" />
     <MESSAGE value="Estrutura de Teste para Antecipação" />
-    <option name="LAST_COMMIT_MESSAGE" value="Estrutura de Teste para Antecipação" />
+    <MESSAGE value="Ajustes na estrutura para atender os testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes na estrutura para atender os testes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2342" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602975174953">

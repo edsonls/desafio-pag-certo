@@ -59,7 +59,15 @@ namespace DesafioPagCerto.Services
             {
                 throw new ForbiddenException("O status da antecipação precisa estar em analise!");
             }
-            return anticipation.Approved(transactionsApproved, TaxFixed).Count == 0
+
+            var transactions = transactionsApproved.ToList();
+            if (anticipation.Transactions.Count() < transactions.ToList().Count)
+            {
+                throw new ForbiddenException(
+                    "A quantidade de transações aprovadas n pode ser maior que a quantidade existente!");
+            }
+
+            return anticipation.Approved(transactions, TaxFixed).Count == 0
                 ? _repository.Reproved(anticipation)
                 : _repository.Approved(anticipation);
         }

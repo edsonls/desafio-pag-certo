@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using DesafioPagCerto.Entities.Transactions;
+using DesafioPagCerto.Enum;
 using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository.Tests;
 using DesafioPagCerto.Services;
@@ -11,7 +12,7 @@ namespace DesafioPagCerto.Tests
 {
     public class AnticipationServiceTest
     {
-        private readonly IAnticipationService _transactionService = new AnticipationService(new AnticipationMock());
+        private readonly IAnticipationService _anticipationService = new AnticipationService(new AnticipationMock());
         private readonly List<Transaction> _transactionMock = new List<Transaction>();
 
         [SetUp]
@@ -46,21 +47,91 @@ namespace DesafioPagCerto.Tests
         [Test]
         public void TestCreateAnticipationNotOk()
         {
-            var transactionService = new AnticipationService(new AnticipationMock(true));
-            Assert.Throws<ForbiddenException>(() => transactionService.CreateAnticipation(_transactionMock));
+            var anticipationService = new AnticipationService(new AnticipationMock(true));
+            Assert.Throws<ForbiddenException>(() => anticipationService.CreateAnticipation(_transactionMock));
         }
 
         [Test]
         public void TestCreateAnticipationOk()
         {
-            Assert.NotNull(_transactionService.CreateAnticipation(_transactionMock));
+            Assert.NotNull(_anticipationService.CreateAnticipation(_transactionMock));
         }
 
         [Test]
-        public void TestCreateAnticipationTransactionNotOk()
+        public void TestDateStartAnticipationOk()
         {
-            var transactionService = new AnticipationService(new AnticipationMock(true));
-            Assert.Throws<ForbiddenException>(() => _transactionService.CreateAnticipation(_transactionMock));
+            var anticipation = _anticipationService.Start(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"));
+            Assert.NotNull(anticipation.AnalysisStartDate);
+            Assert.AreEqual(DateTime.Now.Date, anticipation.AnalysisStartDate.Value.Date);
+        }
+
+        [Test]
+        public void TestDateEndPartiallyApprovedAnticipationOk()
+        {
+            var anticipationService =
+                new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
+            var anticipation = anticipationService.Finish(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                new[]
+                {
+                    new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6")
+                });
+            Assert.NotNull(anticipation.AnalysisEndDate);
+            Assert.AreEqual(DateTime.Now.Date, anticipation.AnalysisEndDate.Value.Date);
+            Assert.AreEqual(ResultAnalysisEnum.PartiallyApproved, anticipation.ResultAnalysis);
+        }
+
+        [Test]
+        public void TestDateEndApprovedAnticipationOk()
+        {
+            var anticipationService =
+                new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
+            var anticipation = anticipationService.Finish(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                new[]
+                {
+                    new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                    new Guid("E2DB4B89-EF82-49A1-5439-08D87502610B")
+                });
+            Assert.NotNull(anticipation.AnalysisEndDate);
+            Assert.AreEqual(DateTime.Now.Date, anticipation.AnalysisEndDate.Value.Date);
+            Assert.AreEqual(ResultAnalysisEnum.Approved, anticipation.ResultAnalysis);
+        }
+
+        [Test]
+        public void TestDateEndApprovedAnticipationNotOk()
+        {
+            var anticipationService =
+                new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
+            Assert.Throws<ForbiddenException>(() =>
+            {
+                anticipationService.Finish(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                    new[]
+                    {
+                        new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                        new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                        new Guid("E2DB4B89-EF82-49A1-5439-08D87502610B")
+                    });
+            });
+        }
+
+        [Test]
+        public void TestDateEndReprovedAnticipationOk()
+        {
+            var anticipationService =
+                new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
+            var anticipation = anticipationService.Finish(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                new[] {new Guid("B6DD6D1A-33F6-411D-736C-08D8750151BD")});
+            Assert.NotNull(anticipation.AnalysisEndDate);
+            Assert.AreEqual(DateTime.Now.Date, anticipation.AnalysisEndDate.Value.Date);
+            Assert.AreEqual(ResultAnalysisEnum.Reproved, anticipation.ResultAnalysis);
+        }
+
+        [Test]
+        public void TestDateStartAnticipationNotOk()
+        {
+            var anticipationService =
+                new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
+            Assert.Throws<ForbiddenException>(() =>
+                anticipationService.Start(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6")));
         }
     }
 }

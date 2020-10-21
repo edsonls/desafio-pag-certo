@@ -120,7 +120,7 @@ namespace DesafioPagCerto.Repository
         public IEnumerable<Transaction> FindAvailable()
         {
             return _drive.Transaction
-                .Where(t => !t.StatusAnticipation && t.Confirmation)
+                .Where(t => t.AnticipationId.ToString() == null && !t.StatusAnticipation && t.Confirmation)
                 .Include(transaction => transaction.Installments)
                 .ToList().Select(ToEntity);
         }

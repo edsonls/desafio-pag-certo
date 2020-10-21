@@ -43,11 +43,6 @@ namespace DesafioPagCerto.Entities.Anticipations
             Transactions = transactions;
         }
 
-        public Anticipation()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Start()
         {
             StatusAnticipation = StatusAnticipations.InAnalysis;
@@ -61,20 +56,23 @@ namespace DesafioPagCerto.Entities.Anticipations
             var transactions = Transactions
                 .Where(t => transactionsApproved.Contains(t.NSU))
                 .ToList();
-            if (transactions.Count == Transactions.Count())
+            if (transactions.Count == 0)
+            {
+                ResultAnalysis = ResultAnalysisEnum.Reproved;
+            }
+            else if (transactions.Count == Transactions.Count())
             {
                 AnticipatedAmount = transactions.Sum(t => t.AnticipatedAmount(taxFixed));
                 ResultAnalysis = ResultAnalysisEnum.Approved;
+                Transactions = transactions;
             }
-            else if (Transactions.Count() > transactions.Count)
+            else
             {
                 AnticipatedAmount = transactions.Sum(t => t.AnticipatedAmount(taxFixed));
                 ResultAnalysis = ResultAnalysisEnum.PartiallyApproved;
+                Transactions = transactions;
             }
-            else
-                ResultAnalysis = ResultAnalysisEnum.Reproved;
-            
-            Transactions = transactions;
+
             return transactions;
         }
     }
