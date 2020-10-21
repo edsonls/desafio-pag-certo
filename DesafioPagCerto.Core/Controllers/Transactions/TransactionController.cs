@@ -5,6 +5,7 @@ using DesafioPagCerto.Repository;
 using DesafioPagCerto.Requests;
 using DesafioPagCerto.Services;
 using DesafioPagCerto.Services.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesafioPagCerto.Controllers.Transactions
@@ -16,6 +17,7 @@ namespace DesafioPagCerto.Controllers.Transactions
         private readonly ITransactionService _transactionService = new TransactionService(new TransactionEntity());
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public Transaction Save([FromBody] TransactionRequest transactionRequest)
         {
             return _transactionService.CreateTransaction(transactionRequest.CardNumber, transactionRequest.ParcelNumber,
@@ -23,7 +25,9 @@ namespace DesafioPagCerto.Controllers.Transactions
         }
 
         [HttpGet("{nsu}")]
-        public IActionResult Find(Guid nsu)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<Transaction> Find(Guid nsu)
         {
             try
             {
