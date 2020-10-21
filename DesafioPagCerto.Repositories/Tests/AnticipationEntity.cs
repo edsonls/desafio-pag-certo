@@ -8,14 +8,21 @@ namespace DesafioPagCerto.Repository.Tests
 {
     public class AnticipationMock : IAnticipationRepository
     {
+        private readonly bool _anticipationInOpen;
+
+        public AnticipationMock(bool anticipationInOpen = false)
+        {
+            _anticipationInOpen = anticipationInOpen;
+        }
+
         public bool AnticipationInOpen()
         {
-            throw new NotImplementedException();
+            return _anticipationInOpen;
         }
 
         public Guid Save(Anticipation anticipation)
         {
-            throw new NotImplementedException();
+            return new Guid();
         }
 
         public Anticipation Find(Guid id)

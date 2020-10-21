@@ -13,9 +13,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Testes de Transação ok">
-      <change afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" afterDir="false" />
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Estrutura de Teste para Antecipação">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Intefaces/ITransactionSerivice.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/TransactionRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionSerivice.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -114,18 +129,19 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Exception/NotFoundException.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Exception/ForbiddenException.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/AnticipationService.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/TransactionRequest.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/TransactionEntity.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Interfaces/ITransactionRepository.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionEntity.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Transactions/Transaction.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/AnticipationEntity.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionService.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Services/TransactionService.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/Tests/TransactionMock.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/TransactionServiceTest.cs" />
       </list>
     </option>
@@ -197,7 +213,7 @@
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
       <workItem from="1603027503046" duration="56246000" />
-      <workItem from="1603233033925" duration="1699000" />
+      <workItem from="1603233033925" duration="6661000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -479,7 +495,28 @@
       <option name="project" value="LOCAL" />
       <updated>1603234399164</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Refatoração">
+      <created>1603234761757</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1603234761757</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Estrutura de Teste para Antecipação">
+      <created>1603235003306</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1603235003306</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Estrutura de Teste para Antecipação">
+      <created>1603235008625</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1603235008625</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Cadastrando no Banco com EntityFramework" />
     <MESSAGE value="Ajuste no metodo que salva a transação para que o mesmo retorne o id da transação" />
     <MESSAGE value="Ajuste para ao salvar retornar o NSU da transação" />
     <MESSAGE value="Ajustando para receber o padrão de UUID ao inves de Id convencional para que possa haver multiplas data base" />
@@ -521,12 +557,13 @@
     <MESSAGE value="Listando antecipações por status do resultado da analise" />
     <MESSAGE value="Criando Migrations" />
     <MESSAGE value="Ajuste nas Exceptions" />
-    <MESSAGE value="Refatoração" />
     <MESSAGE value="Criando Exception personalizada" />
     <MESSAGE value="Adicionando Teste e adequando o codigo" />
     <MESSAGE value="Refatorando os testes" />
     <MESSAGE value="Testes de Transação ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testes de Transação ok" />
+    <MESSAGE value="Refatoração" />
+    <MESSAGE value="Estrutura de Teste para Antecipação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Estrutura de Teste para Antecipação" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2342" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602975174953">
@@ -653,10 +690,10 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2537" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603210045032" />
-    <state x="2460" y="93" key="RiderGenerateDialog" timestamp="1603210881260">
+    <state x="2460" y="93" key="RiderGenerateDialog" timestamp="1603234948006">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state x="2460" y="93" key="RiderGenerateDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603210881260" />
+    <state x="2460" y="93" key="RiderGenerateDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603234948006" />
     <state x="405" y="93" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1603071412371" />
     <state x="2458" y="125" key="RollbackChangesDialog" timestamp="1603208851915">
       <screen x="1920" y="0" width="2048" height="824" />
@@ -666,10 +703,10 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2190" y="60" key="SettingsEditor/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603198829288" />
-    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog" timestamp="1603214744375">
+    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog" timestamp="1603238031775">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603214744375" />
+    <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603238031775" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602980719137" />
     <state x="2401" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603234402362">
       <screen x="1920" y="0" width="2048" height="824" />

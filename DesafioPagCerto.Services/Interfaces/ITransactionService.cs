@@ -10,5 +10,6 @@ namespace DesafioPagCerto.Services.Interfaces
         IEnumerable<Installment> CreateInstallments(int numberInstallment, decimal valueTransaction);
         Transaction Find(Guid NSU);
         IEnumerable<Transaction> FindAvailable();
+        IEnumerable<Transaction> CheckAvailable(IEnumerable<Guid> @select);
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using DesafioPagCerto.Exception;
 using DesafioPagCerto.Repository.Tests;
 using DesafioPagCerto.Services;
 using DesafioPagCerto.Services.Interfaces;
@@ -134,7 +135,21 @@ namespace DesafioPagCerto.Tests
         public void TestFindTransactionOk()
         {
             var tra = _transactionService.Find(Guid.Empty);
-            Assert.AreNotEqual(null,tra);
+            Assert.AreNotEqual(null, tra);
+        }
+
+        [Test]
+        public void TestCheckTransactionForAnticipationNotOk()
+        {
+            Assert.Throws<ForbiddenException>(() =>
+                _transactionService.CheckAvailable(new[] {new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6")}));
+        }
+
+        [Test]
+        public void TestCheckTransactionForAnticipationOk()
+        {
+            var tra = _transactionService.CheckAvailable(new[] {new Guid()});
+            Assert.AreNotEqual(null, tra);
         }
     }
 }

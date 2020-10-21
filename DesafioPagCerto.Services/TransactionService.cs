@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Exception;
@@ -81,6 +82,19 @@ namespace DesafioPagCerto.Services
         public IEnumerable<Transaction> FindAvailable()
         {
             return _repository.FindAvailable();
+        }
+
+        public IEnumerable<Transaction> CheckAvailable(IEnumerable<Guid> nsus)
+        {
+            var transactions = _repository.FindAvailable()
+                .Where(t => nsus.Contains(t.NSU))
+                .ToList();
+            if (null == transactions || !transactions.Any())
+            {
+                throw new ForbiddenException("Todas as transações já foram antecipadas");
+            }
+
+            return transactions;
         }
     }
 }

@@ -14,13 +14,17 @@ namespace DesafioPagCerto.Repository.Tests
 
         public Transaction Find(Guid NSU)
         {
-           return new Transaction(DateTime.Now, 100,  new decimal(99.10), new decimal(0.90),
-            1, "1234");
+            return new Transaction(DateTime.Now, 100, new decimal(99.10), new decimal(0.90),
+                1, "1234");
         }
 
         public IEnumerable<Transaction> FindAvailable()
         {
-            throw new NotImplementedException();
+            return new[]
+            {
+                new Transaction(DateTime.Now, 100, new decimal(99.10), new decimal(0.90),
+                    1, "1234")
+            };
         }
 
         public bool Exist(Guid nsu)

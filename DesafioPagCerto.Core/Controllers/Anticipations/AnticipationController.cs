@@ -30,9 +30,8 @@ namespace DesafioPagCerto.Controllers.Anticipations
         {
             try
             {
-                var transactions = anticipations.Select(a =>
-                    _transactionService.Find(a.nsu));
-                return Ok(_anticipationService.CreateAnticipation(transactions));
+                return Ok(_anticipationService.CreateAnticipation(
+                    _transactionService.CheckAvailable(anticipations.Select(a => a.nsu))));
             }
             catch (ForbiddenException n)
             {
