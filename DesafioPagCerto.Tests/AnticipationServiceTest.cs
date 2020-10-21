@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using DesafioPagCerto.Entities.Transactions;
 using DesafioPagCerto.Enum;
 using DesafioPagCerto.Exception;
@@ -132,6 +133,54 @@ namespace DesafioPagCerto.Tests
                 new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
             Assert.Throws<ForbiddenException>(() =>
                 anticipationService.Start(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6")));
+        }
+
+        [Test]
+        public void TestTaxApprovedAnticipationNotOk()
+        {
+            var anticipationService =
+                new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
+            var anticipation = anticipationService.Finish(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                new[]
+                {
+                    new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                    new Guid("E2DB4B89-EF82-49A1-5439-08D87502610B")
+                });
+            Assert.NotNull(anticipation.AnalysisEndDate);
+            Assert.AreEqual(DateTime.Now.Date, anticipation.AnalysisEndDate.Value.Date);
+            Assert.AreEqual(ResultAnalysisEnum.Approved, anticipation.ResultAnalysis);
+            var anticipationTotal = anticipation.Transactions.Sum(t => t.Installments.Sum(i => i.AnticipationValue));
+            var total =
+                anticipation.Transactions.Sum(t =>
+                    t.Installments.Sum(i => i.NetValue - i.NetValue / 100 * (decimal) 3.8));
+            Assert.AreEqual(anticipationTotal, total);
+            Assert.AreEqual(anticipation.AnticipatedAmount, total);
+        }
+
+        [Test]
+        public void TestApprovedAnticipationDateInstallmentOk()
+        {
+            var anticipationService =
+                new AnticipationService(new AnticipationMock(statusAnticipations: StatusAnticipations.InAnalysis));
+            var anticipation = anticipationService.Finish(new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                new[]
+                {
+                    new Guid("D7484DEE-AB6F-488B-08FE-08D8750151B6"),
+                    new Guid("E2DB4B89-EF82-49A1-5439-08D87502610B")
+                });
+            Assert.NotNull(anticipation.AnalysisEndDate);
+            Assert.AreEqual(DateTime.Now.Date, anticipation.AnalysisEndDate.Value.Date);
+            Assert.AreEqual(ResultAnalysisEnum.Approved, anticipation.ResultAnalysis);
+            foreach (var transaction in anticipation.Transactions)
+            {
+                Assert.True(transaction.Anticipation);
+                foreach (var installment in transaction.Installments)
+                {
+                    Assert.NotNull(installment.TransferDate);
+                    Assert.AreEqual(DateTime.Now.Date,installment.TransferDate.Value.Date);
+                }
+            }
+            
         }
     }
 }
