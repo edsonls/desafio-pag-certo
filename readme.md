@@ -6,7 +6,7 @@
 - Make
 
 #### Instruções de Uso
-Para rodar o projeto basta acessa a raiz e executar o comando `make deploy`, apos fazer isso o projeto vai estar rodando na porta 8088 com a interface do swagger.
+Para rodar o projeto basta acessa a raiz e executar o comando `make deploy`, apos fazer isso o projeto vai estar rodando na porta http://localhost:8088 com a interface do swagger.
 
 #### SDK
 Foi adicionado uma comando para gerar um container sdk afim de rodar migrations e os testes basta seguir o passo a passo.
