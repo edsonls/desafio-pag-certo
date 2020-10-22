@@ -12,7 +12,7 @@ namespace DesafioPagCerto.Repository.EntityFramework.Drive
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=localhost;Database=DesafioPagCertoDB;User Id=sa;Password=#SENHA_carga;");
+                @"Server=db,1433;Database=DesafioPagCertoDB;User Id=sa;Password=#SENHA_carga;");
         }
     }
 }

@@ -33,6 +33,109 @@
             </e>
           </e>
         </e>
+        <e p="out" t="Include">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="DataAnnotationsExtensions.dll" t="Include" />
+          <e p="DesafioPagCerto.Core" t="Include" />
+          <e p="DesafioPagCerto.Core.deps.json" t="Include" />
+          <e p="DesafioPagCerto.Core.dll" t="Include" />
+          <e p="DesafioPagCerto.Core.pdb" t="Include" />
+          <e p="DesafioPagCerto.Core.runtimeconfig.json" t="Include" />
+          <e p="DesafioPagCerto.Entities.dll" t="Include" />
+          <e p="DesafioPagCerto.Entities.pdb" t="Include" />
+          <e p="DesafioPagCerto.Enum.dll" t="Include" />
+          <e p="DesafioPagCerto.Enum.pdb" t="Include" />
+          <e p="DesafioPagCerto.Exception.dll" t="Include" />
+          <e p="DesafioPagCerto.Exception.pdb" t="Include" />
+          <e p="DesafioPagCerto.Repositories.dll" t="Include" />
+          <e p="DesafioPagCerto.Repositories.pdb" t="Include" />
+          <e p="DesafioPagCerto.Services.dll" t="Include" />
+          <e p="DesafioPagCerto.Services.pdb" t="Include" />
+          <e p="dotnet-ef.dll" t="Include" />
+          <e p="EntityFramework.dll" t="Include" />
+          <e p="EntityFramework.SqlServer.dll" t="Include" />
+          <e p="Microsoft.Bcl.AsyncInterfaces.dll" t="Include" />
+          <e p="Microsoft.Bcl.HashCode.dll" t="Include" />
+          <e p="Microsoft.Data.SqlClient.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.Abstractions.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.Relational.dll" t="Include" />
+          <e p="Microsoft.EntityFrameworkCore.SqlServer.dll" t="Include" />
+          <e p="Microsoft.Extensions.Caching.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.Caching.Memory.dll" t="Include" />
+          <e p="Microsoft.Extensions.Configuration.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.Configuration.Binder.dll" t="Include" />
+          <e p="Microsoft.Extensions.Configuration.dll" t="Include" />
+          <e p="Microsoft.Extensions.DependencyInjection.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.DependencyInjection.dll" t="Include" />
+          <e p="Microsoft.Extensions.Logging.Abstractions.dll" t="Include" />
+          <e p="Microsoft.Extensions.Logging.dll" t="Include" />
+          <e p="Microsoft.Extensions.Options.dll" t="Include" />
+          <e p="Microsoft.Extensions.Primitives.dll" t="Include" />
+          <e p="Microsoft.Identity.Client.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.JsonWebTokens.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Logging.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Protocols.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" t="Include" />
+          <e p="Microsoft.IdentityModel.Tokens.dll" t="Include" />
+          <e p="Microsoft.OpenApi.dll" t="Include" />
+          <e p="Newtonsoft.Json.dll" t="Include" />
+          <e p="runtimes" t="Include">
+            <e p="unix" t="Include">
+              <e p="lib" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="System.Runtime.Caching.dll" t="Include" />
+                </e>
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Microsoft.Data.SqlClient.dll" t="Include" />
+                  <e p="System.Data.SqlClient.dll" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="win" t="Include">
+              <e p="lib" t="Include">
+                <e p="netcoreapp2.0" t="Include">
+                  <e p="System.Runtime.Caching.dll" t="Include" />
+                </e>
+                <e p="netcoreapp2.1" t="Include">
+                  <e p="Microsoft.Data.SqlClient.dll" t="Include" />
+                  <e p="System.Data.SqlClient.dll" t="Include" />
+                </e>
+                <e p="netstandard2.0" t="Include">
+                  <e p="System.Security.Cryptography.ProtectedData.dll" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="win-arm64" t="Include">
+              <e p="native" t="Include">
+                <e p="sni.dll" t="Include" />
+              </e>
+            </e>
+            <e p="win-x64" t="Include">
+              <e p="native" t="Include">
+                <e p="sni.dll" t="Include" />
+              </e>
+            </e>
+            <e p="win-x86" t="Include">
+              <e p="native" t="Include">
+                <e p="sni.dll" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Swashbuckle.AspNetCore.Swagger.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.SwaggerGen.dll" t="Include" />
+          <e p="Swashbuckle.AspNetCore.SwaggerUI.dll" t="Include" />
+          <e p="System.CodeDom.dll" t="Include" />
+          <e p="System.Collections.Immutable.dll" t="Include" />
+          <e p="System.Configuration.ConfigurationManager.dll" t="Include" />
+          <e p="System.Data.SqlClient.dll" t="Include" />
+          <e p="System.Diagnostics.DiagnosticSource.dll" t="Include" />
+          <e p="System.IdentityModel.Tokens.Jwt.dll" t="Include" />
+          <e p="System.Runtime.Caching.dll" t="Include" />
+          <e p="System.Security.Cryptography.ProtectedData.dll" t="Include" />
+          <e p="web.config" t="Include" />
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -151,6 +254,9 @@
               <e p="DesafioPagCerto.Tests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="TestResults" t="Include">
+          <e p="_1417481114d8_2020-10-21_09_37_30.trx" t="Include" />
         </e>
         <e p="TransactionServiceTest.cs" t="Include" />
       </e>

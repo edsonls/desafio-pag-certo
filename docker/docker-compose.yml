@@ -1,0 +1,24 @@
+﻿version: "3.8"
+services:
+  web:
+    networks:
+      - desafio-net
+    container_name: web-app
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8088:80"
+    depends_on:
+      - db
+  db:
+    networks:
+      - desafio-net
+    container_name: db
+    image: "mcr.microsoft.com/mssql/server:2017-latest-ubuntu"
+    environment:
+      SA_PASSWORD: "#SENHA_carga"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+networks:
+  desafio-net:

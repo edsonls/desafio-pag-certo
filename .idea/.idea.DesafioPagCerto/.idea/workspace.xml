@@ -13,34 +13,51 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Implementado os testes">
+    <list default="true" id="32c794a0-7ab8-4cfb-8c3c-0d884d4728ee" name="Default Changelist" comment="Swagger Instalado">
+      <change afterPath="$PROJECT_DIR$/docker/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/migrations.Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DesafioPagCerto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/DesafioPagCerto.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/DesafioPagCerto.Core.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/bin/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/Debug/netcoreapp3.1/DesafioPagCerto.Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/DesafioPagCerto.Core.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Core/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Entities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Entities/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Enum/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Enum/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Exception/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Drive/Drive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Drive/Drive.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Repositories/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Services/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Enum.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Enum.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Enum.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Enum.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Exception.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Repositories.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Services.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/bin/Debug/netcoreapp3.1/DesafioPagCerto.Tests.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/Debug/netcoreapp3.1/DesafioPagCerto.Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DesafioPagCerto.Tests/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,10 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Services/Interfaces/ITransactionSerivice.cs" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Parcel.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController1.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/appsettings.json" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/DbContexts/TransactionContext.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Drive/RepositoryDB.cs" />
@@ -121,7 +134,6 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Enum/ResultAnalysisEnum.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Entities/Anticipations/Anticipations.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/AnticipationRequest.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Drive/Drive.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Enum/StatusAnticipationsEnum.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/AnticipationTransactionRequest.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Requests/AnticipationFinishRequest.cs" />
@@ -153,8 +165,13 @@
         <option value="$PROJECT_DIR$/DesafioPagCerto.Tests/AnticipationServiceTest.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Startup.cs" />
-        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" />
         <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Transactions/TransactionController.cs" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Core/Controllers/Anticipations/AnticipationController.cs" />
+        <option value="$PROJECT_DIR$/docker/.dockerignore" />
+        <option value="$PROJECT_DIR$/DesafioPagCerto.Repositories/EntityFramework/Drive/Drive.cs" />
+        <option value="$PROJECT_DIR$/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker/migrations.Dockerfile" />
+        <option value="$PROJECT_DIR$/docker/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -178,7 +195,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.DesafioPagCerto: IIS Express">
+  <component name="RunManager" selected="Docker.docker.migrations: Compose Deployment">
     <configuration name="DesafioPagCerto" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/DesafioPagCerto.Core/DesafioPagCerto.Core.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -209,6 +226,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="docker.migrations: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="migrations" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker.migrations: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -225,7 +260,9 @@
       <workItem from="1602981074278" duration="609000" />
       <workItem from="1602983026388" duration="9947000" />
       <workItem from="1603027503046" duration="56246000" />
-      <workItem from="1603233033925" duration="15864000" />
+      <workItem from="1603233033925" duration="16121000" />
+      <workItem from="1603269761497" duration="627000" />
+      <workItem from="1603313109402" duration="11786000" />
     </task>
     <task id="LOCAL-00001" summary="Commit init estrutura inicial">
       <created>1602964818747</created>
@@ -549,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603246789404</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Swagger Instalado">
+      <created>1603251042285</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1603251042285</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +615,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="EndPoint para pegar transação apartir do NSU" />
     <MESSAGE value="Ajuste no repositorio para salva mesmo que não tenha parcelas" />
     <MESSAGE value="Ajustes para atender os requisitos" />
     <MESSAGE value="Listando transações disponiveis para antecipação" />
@@ -596,13 +639,18 @@
     <MESSAGE value="Ajustes na estrutura para atender os testes" />
     <MESSAGE value="Ajustes para atender os testes" />
     <MESSAGE value="Implementado os testes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementado os testes" />
+    <MESSAGE value="Swagger Instalado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Swagger Instalado" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2342" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602975174953">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2342" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602975174953" />
+    <state x="2424" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603313299976">
+      <screen x="1920" y="0" width="2048" height="824" />
+    </state>
+    <state x="2424" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603313299976" />
     <state x="2408" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602960831177">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
@@ -619,105 +667,105 @@
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
     <state x="2128" y="68" key="DiffContextDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1602974371621" />
-    <state width="2005" height="286" key="GridCell.Tab.0.bottom" timestamp="1603250733525">
+    <state width="2005" height="208" key="GridCell.Tab.0.bottom" timestamp="1603251101254">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101254" />
     <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603248562532" />
-    <state width="2005" height="286" key="GridCell.Tab.0.center" timestamp="1603250733525">
+    <state width="2005" height="208" key="GridCell.Tab.0.center" timestamp="1603251101254">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="208" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101254" />
     <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603248562531" />
-    <state width="2005" height="286" key="GridCell.Tab.0.left" timestamp="1603250733525">
+    <state width="2005" height="208" key="GridCell.Tab.0.left" timestamp="1603251101254">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="208" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101254" />
     <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603248562531" />
-    <state width="2005" height="286" key="GridCell.Tab.0.right" timestamp="1603250733525">
+    <state width="2005" height="208" key="GridCell.Tab.0.right" timestamp="1603251101254">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="208" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101254" />
     <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603248562531" />
-    <state width="2005" height="286" key="GridCell.Tab.1.bottom" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.1.bottom" timestamp="1603251101247">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101247" />
     <state width="1493" height="286" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.1.center" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.1.center" timestamp="1603251101247">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101247" />
     <state width="1493" height="286" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.1.left" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.1.left" timestamp="1603251101247">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101247" />
     <state width="1493" height="286" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.1.right" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.1.right" timestamp="1603251101247">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101247" />
     <state width="1493" height="286" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.2.bottom" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.2.bottom" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.2.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.2.center" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.2.center" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.2.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.2.left" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.2.left" timestamp="1603251101247">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.2.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101247" />
     <state width="1493" height="286" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.2.right" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.2.right" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.2.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603248478721" />
-    <state width="2005" height="286" key="GridCell.Tab.3.bottom" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.3.bottom" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.3.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603248478722" />
-    <state width="2005" height="286" key="GridCell.Tab.3.center" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.3.center" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.3.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603248478722" />
-    <state width="2005" height="286" key="GridCell.Tab.3.left" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.3.left" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.3.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603248478722" />
-    <state width="2005" height="286" key="GridCell.Tab.3.right" timestamp="1603250733525">
+    <state width="2005" height="286" key="GridCell.Tab.3.right" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733525" />
+    <state width="2005" height="286" key="GridCell.Tab.3.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603248478722" />
-    <state width="2005" height="286" key="GridCell.Tab.4.bottom" timestamp="1603250733526">
+    <state width="2005" height="286" key="GridCell.Tab.4.bottom" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733526" />
+    <state width="2005" height="286" key="GridCell.Tab.4.bottom/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603248478723" />
-    <state width="2005" height="286" key="GridCell.Tab.4.center" timestamp="1603250733526">
+    <state width="2005" height="286" key="GridCell.Tab.4.center" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733526" />
+    <state width="2005" height="286" key="GridCell.Tab.4.center/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603248478723" />
-    <state width="2005" height="286" key="GridCell.Tab.4.left" timestamp="1603250733526">
+    <state width="2005" height="286" key="GridCell.Tab.4.left" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733526" />
+    <state width="2005" height="286" key="GridCell.Tab.4.left/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603248478722" />
-    <state width="2005" height="286" key="GridCell.Tab.4.right" timestamp="1603250733526">
+    <state width="2005" height="286" key="GridCell.Tab.4.right" timestamp="1603251101248">
       <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state width="2005" height="286" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603250733526" />
+    <state width="2005" height="286" key="GridCell.Tab.4.right/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251101248" />
     <state width="1493" height="286" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603248478723" />
     <state x="2537" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1603210045032">
       <screen x="1920" y="0" width="2048" height="824" />
@@ -741,10 +789,10 @@
     </state>
     <state x="2044" y="93" width="1800" height="638" key="VCS.FileHistoryDialog/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603238031775" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602980719137" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603246793663">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2401" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603251045949">
+      <screen x="1920" y="0" width="2048" height="824" />
     </state>
-    <state x="2401" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603234402362" />
+    <state x="2401" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.2048.824@1920.0.2048.824" timestamp="1603251045949" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603246793663" />
     <state x="2816" y="257" key="cloudConfig.SelfSettingsDialog" timestamp="1603025700238">
       <screen x="1920" y="0" width="2048" height="824" />
