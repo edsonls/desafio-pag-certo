@@ -12,9 +12,9 @@ Para rodar o projeto basta acessa a raiz e executar o comando `make deploy`, apo
 Foi adicionado uma comando para gerar um container sdk afim de rodar migrations e os testes basta seguir o passo a passo.
 
 ##### Migration
-P1.a:`docker run -d -ti -v ${PWD}:/app -w /app --net desafio-net --name sdk mcr.microsoft.com/dotnet/core/sdk:3.1` <- windows
+(Windows PowerShell)P1.a:`docker run -d -ti -v ${PWD}:/app -w /app --net desafio-net --name sdk mcr.microsoft.com/dotnet/core/sdk:3.1`
 
-P1.b:`docker run -d -ti -v $PWD:/app -w /app --net desafio-net --name sdk mcr.microsoft.com/dotnet/core/sdk:3.1` <- linux
+(Linux)P1.b:`docker run -d -ti -v $PWD:/app -w /app --net desafio-net --name sdk mcr.microsoft.com/dotnet/core/sdk:3.1`
 
 P2:`docker exec -it sdk bash`
 
