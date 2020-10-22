@@ -22,3 +22,4 @@ services:
       MSSQL_PID: "Express"
 networks:
   desafio-net:
+    name: "desafio-net"

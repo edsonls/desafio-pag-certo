@@ -257,6 +257,7 @@
         </e>
         <e p="TestResults" t="Include">
           <e p="_1417481114d8_2020-10-21_09_37_30.trx" t="Include" />
+          <e p="_c95bba5b217c_2020-10-22_01_36_50.trx" t="Include" />
         </e>
         <e p="TransactionServiceTest.cs" t="Include" />
       </e>

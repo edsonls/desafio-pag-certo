@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WExphoYSG6e/LJfHGMKjHPy5e2OTnD25SEpEq5dkhZlqSZElLrPlmvr6xlHOgrFFeE0ksC1QBPxebB/yQ1hyqQ==",
+  "dgSpecHash": "5XhyY8WPmzGpkogLKhOjAM6ha0HATrkrvjVOI2NoHbpGmyNDodhiu/znlAbRlvRilATefkcA9q8F72ASkFcD0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\edson\\Documents\\Projetos\\C#\\DesafioPagCerto\\DesafioPagCerto\\DesafioPagCerto.Enum\\DesafioPagCerto.Enum.csproj",
+  "projectFilePath": "/app/DesafioPagCerto.Enum/DesafioPagCerto.Enum.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
